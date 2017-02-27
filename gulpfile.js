@@ -27,7 +27,7 @@ var gulp = require("gulp"),
 
 gulp.task("sync", ['css'], function() {
     browserSync.init({
-        server: "./src"
+        server: "./"
     });
 
     gulp.watch("src/sass/**/*.scss", ['css']);
