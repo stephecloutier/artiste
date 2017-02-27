@@ -12,7 +12,8 @@ var gulp = require("gulp"),
     autoprefixer = require("gulp-autoprefixer"),
     csso = require("gulp-csso"),
     pug = require("gulp-pug"),
-    sourcemaps = require("gulp-sourcemaps");
+    sourcemaps = require("gulp-sourcemaps"),
+    browserSync = require("browser-sync").create();
 
 // --- Tasks for images
 
@@ -21,6 +22,17 @@ var gulp = require("gulp"),
             .pipe(image())
             .pipe(gulp.dest("assets/images"));
    });
+
+// --- browserSync task
+
+gulp.task("sync", ['css'], function() {
+    browserSync.init({
+        server: "./src"
+    });
+
+    gulp.watch("src/sass/**/*.scss", ['css']);
+    gulp.watch("../index.html").on("change", browserSync.reload);
+});
 
 // --- Tasks for styles
 
@@ -31,7 +43,8 @@ var gulp = require("gulp"),
                 .pipe(autoprefixer())
                 .pipe(csso())
             .pipe(sourcemaps.write())
-            .pipe(gulp.dest("assets/css"));
+            .pipe(gulp.dest("assets/css"))
+            .pipe(browserSync.stream());
    });
 
 // --- Tasks for pug
@@ -55,5 +68,5 @@ var gulp = require("gulp"),
 
 // --- Aliases
 
-    gulp.task("default", ["images", "html", "css"]);
+    gulp.task("default", ["images", "sync", "html", "css"]);
     gulp.task("work", ["default", "watch"]);
