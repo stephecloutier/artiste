@@ -11,7 +11,8 @@ var gulp = require("gulp"),
     sass = require("gulp-sass"),
     autoprefixer = require("gulp-autoprefixer"),
     csso = require("gulp-csso"),
-    pug = require("gulp-pug");
+    pug = require("gulp-pug"),
+    sourcemaps = require("gulp-sourcemaps");
 
 // --- Tasks for images
 
@@ -25,9 +26,11 @@ var gulp = require("gulp"),
 
     gulp.task("css", function() {
         gulp.src("src/sass/**/*.scss")
-            .pipe(sass().on("error", sass.logError))
-            .pipe(autoprefixer())
-            .pipe(csso())
+            .pipe(sourcemaps.init())
+                .pipe(sass().on("error", sass.logError))
+                .pipe(autoprefixer())
+                .pipe(csso())
+            .pipe(sourcemaps.write())
             .pipe(gulp.dest("assets/css"));
    });
 
@@ -35,7 +38,9 @@ var gulp = require("gulp"),
 
     gulp.task("html", function() {
         gulp.src("src/pug/**/*.pug")
-            .pipe(pug({}))
+            .pipe(sourcemaps.init())
+                .pipe(pug({}))
+            .pipe(sourcemaps.write())
             .pipe(gulp.dest("."))
    });
 
