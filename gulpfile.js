@@ -50,11 +50,16 @@ gulp.task("sync", ['css'], function() {
 // --- Tasks for pug
 
     gulp.task("html", function() {
-        gulp.src("src/pug/**/*.pug")
+        gulp.src("src/pug/index.pug")
             .pipe(sourcemaps.init())
                 .pipe(pug({}))
             .pipe(sourcemaps.write())
             .pipe(gulp.dest("."))
+        gulp.src("src/pug/pages/*.pug")
+            .pipe(sourcemaps.init())
+                .pipe(pug({}))
+            .pipe(sourcemaps.write())
+            .pipe(gulp.dest("./pages"))
    });
 
 
