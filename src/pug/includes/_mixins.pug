@@ -1,3 +1,13 @@
+mixin head(page)
+    head
+        meta(charset="utf-8")
+        meta(name="author" content="Stéphanie Cloutier")
+        meta(name="description" content="Imagine Dragons website for a school project")
+        meta(name="keywords" content="design, web, school, project, artist, Imagine Dragons, music, band")
+
+        title Imagine Dragons | #{page}
+        link(rel="stylesheet", href="/assets/css/main.css")
+
 mixin mainNav(page, location)
     nav(title= location+" Navigation")
         h2 #{location} Nav
