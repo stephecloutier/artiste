@@ -19,7 +19,10 @@ var gulp = require("gulp"),
 
     gulp.task("images", function() {
         gulp.src("src/images/**")
-            .pipe(image())
+            .pipe(image({
+                mozjpeg: false,
+                jpegoptim: false
+            }))
             .pipe(gulp.dest("assets/images"));
    });
 
