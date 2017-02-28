@@ -8,6 +8,13 @@ mixin head(page, chemin)
         title Imagine Dragons | #{page}
         link(rel="stylesheet", href= chemin+"assets/css/main.css")
 
+mixin footer(page)
+    footer(title="Footer")
+        +mainNav(page, "Footer")
+        small &copy;&nbsp;Stéphanie Cloutier
+        small Privacy Policy
+        small Terms &amp; Conditions
+
 mixin mainNav(page, location)
     nav(title= location+" Navigation")
         h2 #{location} Nav
