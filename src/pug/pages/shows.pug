@@ -1,0 +1,81 @@
+doctype html
+include ../includes/_mixins.pug
+
+html
+    +head("Shows", "../")
+
+    body
+        h1 Imagine Dragons | Shows
+
+        +mainNav("Shows", "Main")
+
+        section(title="Shows")
+            h2 Shows
+
+            article(title="Show 1")
+                h3 Show 1
+                dl
+                    dt Lieu
+                    dd Centre Bell
+
+                    dt Date
+                    dd
+                        time(datetime="2000-01-01") La Date du Show 1
+
+                    dt Time
+                    dd
+                        time(datetime="2000-01-01") L'heure du Show 1
+
+                    dt Prix
+                    dd $20.00
+                a(href="#KMI") Keep me informed!
+
+            article(title="Show 2")
+                h3 Show 2
+                dl
+                    dt Lieu
+                    dd Centre Bell
+
+                    dt Date
+                    dd
+                        time(datetime="2000-01-01") La Date du Show 2
+
+                    dt Time
+                    dd
+                        time(datetime="2000-01-01") L'heure du Show 2
+
+                    dt Prix
+                    dd $20.00
+                a(href="#KMI") Keep me informed!
+
+            article(title="Show 3")
+                h3 Show 3
+                dl
+                    dt Lieu
+                    dd Centre Bell
+
+                    dt Date
+                    dd
+                        time(datetime="2000-01-01") La Date du Show 3
+
+                    dt Time
+                    dd
+                        time(datetime="2000-01-01") L'heure du Show 3
+
+                    dt Prix
+                    dd $20.00
+                a(href="#KMI") Keep me informed!
+
+        section(title="Keep me informed" id="KMI")
+            h2 Keep me informed
+
+            form(action="#" method="POST")
+                label(for="formName") Name
+                input(type="text" name="name" id="formName" placeholder="John Doe" required="required")
+
+                label(for="formMail") Email
+                input(type="email" name="mail" id="formMail" placeholder="johndoe@email.com" required="required")
+
+                button(type="submit") Keep me informed!
+
+        +footer("Shows")
