@@ -1,4 +1,5 @@
 doctype html
+include includes/_mixins.pug
 html(lang="fr")
     head
         meta(charset="utf-8")
@@ -12,19 +13,7 @@ html(lang="fr")
     body
         h1 Imagine Dragons
 
-        nav(title="mainNav")
-            h2 Main Nav
-            ul
-                li
-                    a(href="#" title="home") Home
-                li
-                    a(href="pages/medias.html" title="medias") Medias
-                li
-                    a(href="pages/music.html" title="music") Music
-                li
-                    a(href="pages/shows.html" title="shows") Shows
-                li
-                    a(href="pages/news.html" title="news") News
+        +mainNav("Home", "Main")
 
         section(title="Biography")
             h2 Biography
@@ -37,19 +26,7 @@ html(lang="fr")
 
         footer(title="footer")
             h2 Footer
-            nav(title="footerNav")
-                h2 Footer Nav
-                ul
-                    li
-                        a(href="#" title="home") Home
-                    li
-                        a(href="pages/medias.html" title="medias") Medias
-                    li
-                        a(href="pages/music.html" title="music") Music
-                    li
-                        a(href="pages/shows.html" title="shows") Shows
-                    li
-                        a(href="pages/news.html" title="news") News
+            +mainNav("Home", "Footer")
             small &copy;&nbsp;Stéphanie Cloutier
             small Privacy Policy
             small Terms &amp; Conditions
