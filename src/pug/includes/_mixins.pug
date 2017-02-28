@@ -1,4 +1,4 @@
-mixin head(page)
+mixin head(page, chemin)
     head
         meta(charset="utf-8")
         meta(name="author" content="Stéphanie Cloutier")
@@ -6,7 +6,7 @@ mixin head(page)
         meta(name="keywords" content="design, web, school, project, artist, Imagine Dragons, music, band")
 
         title Imagine Dragons | #{page}
-        link(rel="stylesheet", href="/assets/css/main.css")
+        link(rel="stylesheet", href= chemin+"assets/css/main.css")
 
 mixin mainNav(page, location)
     nav(title= location+" Navigation")
