@@ -7,6 +7,18 @@ mixin head(page, chemin)
 
         title Imagine Dragons | #{page}
         link(rel="stylesheet", href= chemin+"assets/css/main.css")
+            
+mixin header(page, location)
+    header
+        h1
+            if page == "Home"
+                a(href="#")
+                    img(href="../assets/images/logo.svg"  alt="Imagine Dragons")
+            else
+                a(href="../index.html")
+                    img(href="../assets/images/logo.svg"  alt="Imagine Dragons")
+        
+        +mainNav(page, location)
 
 mixin footer(page)
     footer(title="Footer")
@@ -33,7 +45,7 @@ mixin footer(page)
 
 mixin mainNav(page, location)
     nav(title= location+" Navigation")
-        h2 #{location} Nav
+        h2 #{location} navigation
         ul
             if page == "Home"
                 li
@@ -70,7 +82,6 @@ mixin mainNav(page, location)
                     a(href="shows.html" title="shows") Shows
                 li
                     a(href="news.html" title="news") News
-
 
             else if page == "Shows"
                 li
