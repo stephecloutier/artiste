@@ -13,10 +13,10 @@ mixin header(page, location)
         h1
             if page == "Home"
                 a(href="#")
-                    img(href="../assets/images/logo.svg"  alt="Imagine Dragons")
+                    img(src="./assets/images/logo.svg"  alt="Imagine Dragons")
             else
                 a(href="../index.html")
-                    img(href="../assets/images/logo.svg"  alt="Imagine Dragons")
+                    img(src="../assets/images/logo.svg"  alt="Imagine Dragons")
         
         +mainNav(page, location)
 
