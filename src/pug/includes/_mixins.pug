@@ -9,8 +9,8 @@ mixin head(page, chemin)
         link(rel="stylesheet", href= chemin+"assets/css/main.css")
             
 mixin header(page, location)
-    header
-        h1
+    header.header
+        h1.header__title
             if page == "Home"
                 a(href="#")
                     img(src="./assets/images/logo.svg"  alt="Imagine Dragons")
@@ -44,55 +44,55 @@ mixin footer(page)
         small Terms &amp; Conditions
 
 mixin mainNav(page, location)
-    nav(title= location+" Navigation")
+    nav(title= location+" Navigation" class= location+"__nav")
         h2 #{location} navigation
-        ul
+        ul(class= location+"__list")
             if page == "Home"
-                li
-                    a(href="pages/medias.html" title="medias") Medias
-                li
-                    a(href="pages/music.html" title="music") Music
-                li
-                    a(href="pages/shows.html" title="shows") Shows
-                li
-                    a(href="pages/news.html" title="news") News
+                li(class= location+"__li")
+                    a(href="pages/medias.html" title="medias" class= location+"__link") Medias
+                li(class= location+"__li")
+                    a(href="pages/music.html" title="music" class= location+"__link") Music
+                li(class= location+"__li")
+                    a(href="pages/shows.html" title="shows" class= location+"__link") Shows
+                li(class= location+"__li")
+                    a(href="pages/news.html" title="news" class= location+"__link") News
 
             else if page == "Medias"
-                li
-                    a(href="#" title="medias") Medias
-                li
-                    a(href="music.html" title="music") Music
-                li
-                    a(href="shows.html" title="shows") Shows
-                li
-                    a(href="news.html" title="news") News
+                li(class= location+"__li")
+                    a(href="#" title="medias" class= location+"__link") Medias
+                li(class= location+"__li")
+                    a(href="music.html" title="music" class= location+"__link") Music
+                li(class= location+"__li")
+                    a(href="shows.html" title="shows" class= location+"__link") Shows
+                li(class= location+"__li")
+                    a(href="news.html" title="news" class= location+"__link") News
 
             else if page == "Music"
-                li
-                    a(href="medias.html" title="medias") Medias
-                li
-                    a(href="#" title="music") Music
-                li
-                    a(href="shows.html" title="shows") Shows
-                li
-                    a(href="news.html" title="news") News
+                li(class= location+"__li")
+                    a(href="medias.html" title="medias" class= location+"__link") Medias
+                li(class= location+"__li")
+                    a(href="#" title="music" class= location+"__link") Music
+                li(class= location+"__li")
+                    a(href="shows.html" title="shows" class= location+"__link") Shows
+                li(class= location+"__li")
+                    a(href="news.html" title="news" class= location+"__link") News
 
             else if page == "Shows"
-                li
-                    a(href="medias.html" title="medias") Medias
-                li
-                    a(href="music.html" title="music") Music
-                li
-                    a(href="#" title="shows") Shows
-                li
-                    a(href="news.html" title="news") News
+                li(class= location+"__li")
+                    a(href="medias.html" title="medias" class= location+"__link") Medias
+                li(class= location+"__li")
+                    a(href="music.html" title="music" class= location+"__link") Music
+                li(class= location+"__li")
+                    a(href="#" title="shows" class= location+"__link") Shows
+                li(class= location+"__li")
+                    a(href="news.html" title="news" class= location+"__link") News
 
             else if page == "News"
-                li
-                    a(href="medias.html" title="medias") Medias
-                li
-                    a(href="music.html" title="music") Music
-                li
-                    a(href="shows.html" title="shows") Shows
-                li
+                li(class= location+"__li")
+                    a(href="medias.html" title="medias" class= location+"__link") Medias
+                li(class= location+"__li")
+                    a(href="music.html" title="music" class= location+"__link") Music
+                li(class= location+"__li")
+                    a(href="shows.html" title="shows" class= location+"__link") Shows
+                li(class= location+"__li")
                     a(href="#" title="news") News
