@@ -1,0 +1,7 @@
+h1, h2 {
+    text-transform: uppercase;
+}
+
+footer h2, header h2 {
+    @include hidden;
+}
