@@ -8,17 +8,21 @@ mixin head(page, chemin)
         title Imagine Dragons | #{page}
         link(rel="stylesheet", href= chemin+"assets/css/main.css")
             
-mixin header(page, location)
-    header.header
-        h1.header__title
-            if page == "Home"
-                a(href="#")
-                    img(src="./assets/images/logo.svg"  alt="Imagine Dragons")
-            else
-                a(href="../index.html")
-                    img(src="../assets/images/logo.svg"  alt="Imagine Dragons")
+mixin header(page, location)    
+    if page == "Home"
+        header(class="header header--home")
+            h1.header__title
+                a(href="#" class="header__logo-link")
+                    img(src="./assets/images/logo.svg"  alt="Imagine Dragons" class="header__img")
+            +mainNav(page, location)
+    else
+        header(class="header")        
+            h1.header__title
+                a(href="../index.html" class="header__logo-link")
+                    img(src="../assets/images/logo.svg"  alt="Imagine Dragons" class="header__img")
+            +mainNav(page, location)
         
-        +mainNav(page, location)
+
 
 mixin footer(page)
     footer(title="Footer")
@@ -75,7 +79,7 @@ mixin mainNav(page, location)
                 li(class= location+"__li")
                     a(href="shows.html" title="shows" class= location+"__link") Shows
                 li(class= location+"__li")
-                    a(href="news.html" title="news" class= location+"__link") News
+                    a(href="news.html" title="news" class= location+"__link "+location+"__link--last") News
 
             else if page == "Shows"
                 li(class= location+"__li")
@@ -95,4 +99,4 @@ mixin mainNav(page, location)
                 li(class= location+"__li")
                     a(href="shows.html" title="shows" class= location+"__link") Shows
                 li(class= location+"__li")
-                    a(href="#" title="news") News
+                    a(href="#" title="news" class= location+"__link") News

@@ -1,0 +1,31 @@
+.header {
+    background-color: $dPurple;
+    background: linear-gradient(to bottom right, $dPurple, $lPurple);
+    color: white;
+    &.header--home {
+        background: transparent url(../images/cover_image.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center top;
+        min-height: 100vh;
+        justify-content: flex-start;
+    }
+}
+
+.header__img {
+    //box-shadow: 0 1px 4px 0 $shadowGrey;
+    //h-shadow v-shadow blur spread color
+}
+
+.header__li:nth-child(-n+3){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &::after {
+        content: "\25C6";
+        display: inline-block;
+        width: 56px;
+        color: white;
+        font-size: 0.5em;
+    }
+}
