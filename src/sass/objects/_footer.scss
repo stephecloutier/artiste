@@ -1,0 +1,47 @@
+.footer {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+
+.footer__wrapper {
+    width: 750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__nav {
+    width: 15%;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__li {
+    display: inline-block;
+}
+
+.footer__icon {
+    width: 1em;
+    height: 1em;
+}
+
+.footer__small, .footer__link--mail {
+    font-size: 0.694em;
+}
+
+.footer__link--mail {
+    text-decoration: underline;
+}
+
+.footer__small-wrapper {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}

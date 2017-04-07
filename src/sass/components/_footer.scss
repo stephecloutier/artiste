@@ -1,0 +1,20 @@
+.footer {
+    background-color: $lGrey;
+    color: $dPurple;
+}
+
+.footer__icon {
+    fill: url("#grad1");
+}
+
+.svgGradient--stop1 {
+    stop-color: $dPurple;
+    stop-opacity: 1;
+}
+
+.svgGradient--stop2 {
+    stop-color: $lPurple;
+    stop-opacity: 1;
+}
+
+//style="stop-color:"+stop1+";stop-opacity:1"

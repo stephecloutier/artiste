@@ -6,6 +6,6 @@ h1, h2 {
     letter-spacing: 9px;
 }
 
-footer h2, header h2 {
+header h2, footer h2, footer h3 {
     @include hidden;
 }
