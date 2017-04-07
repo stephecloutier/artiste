@@ -1,0 +1,29 @@
+.biography {
+    width: 100%;
+    padding-top: 5em;
+    text-align: center;
+}
+
+.biography__title {
+}
+
+.biography__wrapper {
+    text-align: left;
+    padding-bottom: 5em;
+    width: 80%;
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.biography__col {
+    width: 350px;
+}
+
+.biography__p {
+    font-size: 1em;
+    line-height: 2;
+    margin-bottom: 1em;
+}

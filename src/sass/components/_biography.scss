@@ -1,0 +1,22 @@
+.biography {
+    color: white;
+    background: linear-gradient(to bottom right, $dPurple, $lPurple);
+}
+
+.biography__title {
+    &::after {
+        content: "\25C6";
+        display: block;
+        width: 41px;
+        color: white;
+        font-size: 0.5em;
+        margin: 2.5em auto 3em;
+    }
+}
+
+.biography--border {
+    border: 2px solid white;
+    display: inline-block;
+    padding: 1em;
+    margin: 0 auto;
+}
