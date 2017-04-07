@@ -7,7 +7,6 @@ mixin head(page, chemin)
 
         title Imagine Dragons | #{page}
         link(rel="stylesheet", href= chemin+"assets/css/main.css")
-            
         +svgGradient
             
 mixin header(page, location)    
@@ -107,7 +106,7 @@ mixin mainNav(page, location)
                     a(href="#" title="news" class= location+"__link") News
                     
 mixin svgGradient
-    svg
+    svg.svgDef
         defs
             linearGradient(id="grad1" x1="0%" y1="0%" x2="100%" y2="100%" class="svgGradient")
               stop(offset="0%" class="svgGradient--stop1")
