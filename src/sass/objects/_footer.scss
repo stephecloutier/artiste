@@ -3,10 +3,12 @@
     display: flex;
     align-items: center;
     font-weight: 300;
+    width: 100%;
 }
 
 .footer__wrapper {
-    width: 750px;
+    max-width: 950px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -14,17 +16,18 @@
 }
 
 .footer-social__nav {
-    width: 15%;
+    width: 40%;
 }
 
 .footer-social__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .footer-social__li {
     display: inline-block;
+    margin-right: 1em;
 }
 
 .footer-social__icon {
@@ -38,10 +41,11 @@
 
 .footer__link--mail {
     text-decoration: underline;
+    margin-left: 1em;
 }
 
 .footer__small-wrapper {
-    width: 30%;
+    width: 60%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
