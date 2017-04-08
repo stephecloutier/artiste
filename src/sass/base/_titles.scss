@@ -7,11 +7,14 @@ h1, h2 {
 }
 
 h1 {
-    @include titleBorder($dPurple);
-    margin: 0 auto;
     &::after {
         @include titleDiamond($dPurple);
     }
+}
+
+h1 span {
+    @include titleBorder($dPurple);
+    margin: 0 auto;
 }
 
 header h2, footer h2, footer h3 {

@@ -17,8 +17,7 @@
 @mixin titleDiamond($color) {
     content: "\25C6";
     display: block;
-    width: 41px;
-    color: white;
+    color: $color;
     font-size: 0.5em;
-    margin: 2.5em auto 3em;
+    margin: 2em auto 2em;
 }
