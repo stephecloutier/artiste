@@ -6,7 +6,6 @@
 
 .biography__wrapper {
     text-align: left;
-    //padding-bottom: 5em;
     width: 80%;
     max-width: 750px;
     margin: 0 auto;
@@ -16,7 +15,7 @@
 }
 
 .biography__col {
-    width: 350px;
+    max-width: 350px;
 }
 
 .biography__p {
