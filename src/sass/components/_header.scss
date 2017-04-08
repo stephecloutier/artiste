@@ -14,6 +14,7 @@
 
 .header__img {
     fill: white;
+    filter: url("#dropshadow");
     //box-shadow: 0 1px 4px 0 $shadowGrey;
     //h-shadow v-shadow blur spread color
 }
