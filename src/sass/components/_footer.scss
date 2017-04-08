@@ -3,23 +3,12 @@
     color: $dPurple;
 }
 
-@include fillSocial;
 
-.svgGradient--stop1 {
-    stop-color: $dPurple;
-    stop-opacity: 1;
-}
-.svgGradient--stop2 {
-    stop-color: $lPurple;
-    stop-opacity: 1;
+.footer-social__icon {
+    fill: url("#baseGradient");
 }
 
 
-// .footer-social__icon:hover {
-//     &>.svgGradient--stop1 {
-//         stop-color: $lPurple;
-//     }
-//     &>.svgGradient--stop2 {
-//         stop-color: $dPurple;
-//     }
-// }
+.footer-social__icon:hover {
+    fill: url("#hoverGradient");
+}

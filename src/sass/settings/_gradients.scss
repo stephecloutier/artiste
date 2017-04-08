@@ -1,0 +1,17 @@
+.svgBaseGradient {
+    &>.svgGradient--stop1 {
+        stop-color: $dPurple;
+    }
+    &>.svgGradient--stop2 {
+        stop-color: $lPurple;
+    }
+}
+
+.svgHoverGradient {
+    &>.svgGradient--stop1 {
+        stop-color: $turquoise;
+    }
+    &>.svgGradient--stop2 {
+        stop-color: $dPurple;
+    }
+}
