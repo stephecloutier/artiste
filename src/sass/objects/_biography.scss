@@ -6,7 +6,7 @@
 
 .biography__wrapper {
     text-align: left;
-    padding-bottom: 5em;
+    //padding-bottom: 5em;
     width: 80%;
     max-width: 750px;
     margin: 0 auto;
@@ -23,4 +23,7 @@
     font-size: 1em;
     line-height: 2;
     margin-bottom: 1em;
+    &.biography__p--last {
+        margin-bottom: 0;
+    }
 }
