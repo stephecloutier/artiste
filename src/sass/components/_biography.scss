@@ -15,8 +15,6 @@
 }
 
 .biography--border {
-    border: 2px solid white;
-    display: inline-block;
-    padding: 1em;
+    @include titleBorder(white);
     margin: 0 auto;
 }
