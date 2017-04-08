@@ -27,29 +27,33 @@ mixin header(page, location)
 mixin footer(page)
     footer(title="Footer" class="footer")
         div.footer__wrapper
-            nav(title="Social Medias" class="footer__nav")
-                h3 Social Medias
-                ul.footer__list
-                    li.footer__li
-                        a(href="https://www.facebook.com/ImagineDragons/" title="Visit our Facebook Page" class="footer__link")
-                            +facebook-icon("footer__icon")
-                            
-                    li.footer__li
-                        a(href="https://www.youtube.com/user/ImagineDragons" title="Visit our Youtube Channel" class="footer__link")
-                            +youtube-icon("footer__icon")
-                            
-                    li.footer__li
-                        a(href="https://twitter.com/Imaginedragons" title="Visit our Twitter" class="footer__link")
-                            +twitter-icon("footer__icon")
-                    li.footer__li
-                        a(href="https://www.instagram.com/imaginedragons/" title="Visit our Instagram" class="footer__link")
-                            +instagram-icon("footer__icon")
+            +socialNav("footer")
                                     
             div.footer__small-wrapper
                 small(class="footer__small footer__small--copy") &copy;&nbsp;Stéphanie Cloutier
                 
                 a(href="mailto:stephecloutier@gmail.com" title="Send me an email" class="footer__link footer__link--mail")
                         | Contact webmaster
+                        
+mixin socialNav(location)
+    nav(title="Social Medias" class=location+"-social__nav")
+        h3 Social Medias
+        ul(class=location+"-social__list")
+            li(class=location+"-social__li")
+                a(href="https://www.facebook.com/ImagineDragons/" title="Visit our Facebook Page" class=location+"-social__link")
+                    +facebook-icon(location+"-social__icon")
+                    
+            li(class=location+"-social__li")
+                a(href="https://www.youtube.com/user/ImagineDragons" title="Visit our Youtube Channel" class=location+"-social__link")
+                    +youtube-icon(location+"-social__icon")
+                    
+            li(class=location+"-social__li")
+                a(href="https://twitter.com/Imaginedragons" title="Visit our Twitter" class=location+"-social__link")
+                    +twitter-icon(location+"-social__icon")
+            li(class=location+"-social__li")
+                a(href="https://www.instagram.com/imaginedragons/" title="Visit our Instagram" class=location+"-social__link")
+                    +instagram-icon(location+"-social__icon")
+
 
 mixin mainNav(page, location)
     nav(title= location+" Navigation" class= location+"__nav")
