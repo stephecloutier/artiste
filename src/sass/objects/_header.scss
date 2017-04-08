@@ -1,15 +1,16 @@
 .header {
     text-align: center;
-    min-height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%
+    width: 100%;
+    padding-top: 2.5em;
+    padding-bottom: 2em;
 }
 
 .header__title {
-    margin-top: 2.5em;
+    margin-bottom: 0.8em;
     width: 400px;
     text-align: center;
 }
@@ -37,9 +38,7 @@
 .header__link {
     box-sizing: border-box;
     display: inline-block;
-    padding: 0.6em 1em;
-    margin-top: 1.3em;
-    margin-bottom: 1.3em;
+    padding: 0.5em 1em;
     border: 2px solid transparent;
     transition: 0.2s ease-in-out;
     &:hover {
