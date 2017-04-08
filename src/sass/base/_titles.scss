@@ -6,6 +6,13 @@ h1, h2 {
     letter-spacing: 9px;
 }
 
+h1 {
+    border: 2px solid $dPurple;
+    display: inline-block;
+    padding: 1em;
+    margin: 0 auto;
+}
+
 header h2, footer h2, footer h3 {
     @include hidden;
 }
