@@ -7,40 +7,13 @@ html(lang="fr")
         +header("Medias", "header")
             
         main
-            section(title="Medias")
-                h1
+            section(title="Medias" class="medias")
+                h1.medias__title
                     span Medias
-
-                figure
-                    img(src="http://lorempixel.com/300/200/" title="Title ici")
-                    figcaption Description ici
-
-                figure
-                    img(src="http://lorempixel.com/300/200/" title="Title ici")
-                    figcaption Description ici
-
-                figure
-                    img(src="http://lorempixel.com/300/200/" title="Title ici")
-                    figcaption Description ici
-
-                figure
-                    img(src="http://lorempixel.com/300/200/" title="Title ici")
-                    figcaption Description ici
-
-                figure
-                    img(src="http://lorempixel.com/300/200/" title="Title ici")
-                    figcaption Description ici
-
-                figure
-                    img(src="http://lorempixel.com/300/200/" title="Title ici")
-                    figcaption Description ici
-
-                figure
-                    img(src="http://lorempixel.com/300/200/" title="Title ici")
-                    figcaption Description ici
-
-                figure
-                    img(src="http://lorempixel.com/300/200/" title="Title ici")
-                    figcaption Description ici
-
+                div.medias__figures
+                    - var n = 0
+                    while n < 16
+                        +mediasFigures("../assets/images/medias_1.jpg", "Imagine Dragons in Italy", "2017-03-14", "Italy")
+                        - n++
+                    
         +footer("Medias")

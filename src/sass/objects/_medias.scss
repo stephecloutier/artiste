@@ -1,0 +1,29 @@
+.medias {
+}
+
+.medias__figures {
+    max-width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.medias__figure {
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medias__img {
+
+}
+
+.medias__caption {
+    @include hidden;
+}
