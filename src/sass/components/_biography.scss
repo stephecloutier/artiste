@@ -5,12 +5,7 @@
 
 .biography__title {
     &::after {
-        content: "\25C6";
-        display: block;
-        width: 41px;
-        color: white;
-        font-size: 0.5em;
-        margin: 2.5em auto 3em;
+        @include titleDiamond(white);
     }
 }
 

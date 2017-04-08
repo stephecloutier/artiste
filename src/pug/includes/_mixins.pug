@@ -14,12 +14,14 @@ mixin header(page, location)
         header(class="header header--home")
             h1.header__title
                 a(href="#" class="header__logo-link")
+                    | Imagine Dragons
                     +logo("header__img")
             +mainNav(page, location)
     else
         header(class="header")        
             h1.header__title
                 a(href="../index.html" class="header__logo-link")
+                    | Imagine Dragons
                     +logo("header__img")
             +mainNav(page, location)
                     

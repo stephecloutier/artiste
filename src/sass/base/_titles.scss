@@ -9,6 +9,9 @@ h1, h2 {
 h1 {
     @include titleBorder($dPurple);
     margin: 0 auto;
+    &::after {
+        @include titleDiamond($dPurple);
+    }
 }
 
 header h2, footer h2, footer h3 {
