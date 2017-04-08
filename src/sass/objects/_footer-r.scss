@@ -1,0 +1,25 @@
+@media screen and (max-width: 420px){
+    .footer__wrapper {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 3em;
+        padding-bottom: 2em;
+    }
+    .footer-social__nav, .footer__small-wrapper {
+        width: 90%;
+    }
+
+    .footer-social__nav {
+        margin-bottom: 2em;
+    }
+
+    .footer-social__list, .footer__small-wrapper {
+        justify-content: space-between;
+    }
+
+    .footer-social__icon {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+}
