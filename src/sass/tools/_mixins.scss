@@ -21,3 +21,16 @@
     font-size: 0.5em;
     margin: 2em auto 2em;
 }
+
+@mixin socialGradient($social) {
+    .footer-social__icon {
+        fill: url("#gradient-"+$social);
+    }
+}
+
+@mixin fillSocial {
+    $socialMedias: "facebook" "youtube" "twitter" "instagram";
+    @each $social in $socialMedias {
+        @include socialGradient($social);
+    }
+}
