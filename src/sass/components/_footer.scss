@@ -3,12 +3,24 @@
     color: $dPurple;
 }
 
+.footer__link {
+    transition: 0.2s ease-in-out;
+    &.footer__link:hover {
+        //opacity: 0.7;
+        color: $lPurple;
+    }
+}
+
 
 .footer-social__icon {
     fill: url("#baseGradient");
+    transition-duration: 0.8s;
+    transition-timing-function: ease-out;
 }
 
 
 .footer-social__icon:hover {
     fill: url("#hoverGradient");
+    opacity: 0.7;
+    //fill: $lPurple;
 }
