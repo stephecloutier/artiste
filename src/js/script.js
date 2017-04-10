@@ -1,20 +1,14 @@
-// 'use strict';
-//
-// $(document).ready(function () {
-// 	$('#navIcon').click(function () {
-// 		$(this).toggleClass('open');
-// 	});
-// });
-
 
 /*global window*/
 (function () {
     "use strict";
 
     let $icon = document.getElementById("navIconSVG");
+    let $nav = document.getElementById("menuList");
 
     const fToggleNav = function () {
         $icon.classList.toggle("open");
+        $nav.classList.toggle("nav--transition");
     }
 
     const fPageIsLoaded = function () {
