@@ -1,13 +1,34 @@
-// à 900, changer la
-
 @media screen and (max-width: 700px){
-    .header__nav {
-        width: 80%;
+    .header__link {
+        padding: 0.35em 0.75em;
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .header__nav {
-        // à faire ;
+        max-width: 500px;
+        .header__li {
+            font-size: 1em;
+        }
+    }
+}
+
+@media screen and (max-width: 520px){
+    .header__nav {
+        max-width: 95%;
+        .header__li {
+            //width: 20%;
+        }
+    }
+}
+
+@media screen and (max-width: 460px){
+    .header__title {
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 300px) {
+    .header__title {
+        width: 240px;
     }
 }

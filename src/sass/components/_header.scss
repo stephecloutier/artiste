@@ -19,15 +19,21 @@
     //h-shadow v-shadow blur spread color
 }
 
-.header__li:nth-child(-n+3){
+.header__li {
     display: flex;
     align-items: center;
     justify-content: space-between;
     &::after {
         content: "\25C6";
         display: inline-block;
-        width: 41px;
         color: white;
         font-size: 0.5em;
+        padding: 0 1.5em;
+    }
+    &.header__li--last::after {
+        content: "";
+        width: 0;
+        font-size: 0;
+        color: transparent;
     }
 }

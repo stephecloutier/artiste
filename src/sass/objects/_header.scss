@@ -23,7 +23,7 @@
 }
 
 .header__nav {
-    width: 565px;
+    max-width: 565px;
 }
 
 .header__list {
@@ -35,10 +35,14 @@
 
 .header__li {
     display: inline-block;
+    //display: flex;
+    //align-items: center;
+    //justify-content: space-between;
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 600;
     letter-spacing: 1px;
+
 }
 
 

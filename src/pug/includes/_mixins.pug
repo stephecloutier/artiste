@@ -69,7 +69,7 @@ mixin mainNav(page, location)
                     a(href="pages/music.html" title="music" class= location+"__link") Music
                 li(class= location+"__li")
                     a(href="pages/shows.html" title="shows" class= location+"__link") Shows
-                li(class= location+"__li")
+                li(class= location+"__li"+" "+location+"__li--last")
                     a(href="pages/news.html" title="news" class= location+"__link") News
 
             else if page == "Medias"
@@ -79,7 +79,7 @@ mixin mainNav(page, location)
                     a(href="music.html" title="music" class= location+"__link") Music
                 li(class= location+"__li")
                     a(href="shows.html" title="shows" class= location+"__link") Shows
-                li(class= location+"__li")
+                li(class= location+"__li"+" "+location+"__li--last")
                     a(href="news.html" title="news" class= location+"__link") News
 
             else if page == "Music"
@@ -89,7 +89,7 @@ mixin mainNav(page, location)
                     a(href="#" title="music" class= location+"__link") Music
                 li(class= location+"__li")
                     a(href="shows.html" title="shows" class= location+"__link") Shows
-                li(class= location+"__li")
+                li(class= location+"__li"+" "+location+"__li--last")
                     a(href="news.html" title="news" class= location+"__link "+location+"__link--last") News
 
             else if page == "Shows"
@@ -109,7 +109,7 @@ mixin mainNav(page, location)
                     a(href="music.html" title="music" class= location+"__link") Music
                 li(class= location+"__li")
                     a(href="shows.html" title="shows" class= location+"__link") Shows
-                li(class= location+"__li")
+                li(class= location+"__li"+" "+location+"__li--last")
                     a(href="#" title="news" class= location+"__link") News
 
 
