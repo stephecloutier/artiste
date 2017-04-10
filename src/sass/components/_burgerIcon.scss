@@ -1,0 +1,42 @@
+.navIconSVG {
+    display: none;
+    width: 3em;
+    height: 3em;
+    margin: 2em;
+    cursor: pointer;
+    .svg__rect {
+        fill: white;
+    }
+    .svg__group {
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+
+        position: relative;
+    }
+    .svg__line {
+        fill: $dPurple;
+        opacity: 1;
+        left: 0;
+
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+
+    }
+    &.open {
+        .svg__line--1 {
+            opacity: 0;
+            transform: translateY(17.2px);
+        }
+        .svg__line--2 {
+            transform: rotate(45deg);
+        }
+        .svg__line--3 {
+            transform: rotate(-45deg);
+        }
+        .svg__line--4 {
+            opacity: 0;
+            transform: translateY(-17.2px);
+        }
+    }
+}

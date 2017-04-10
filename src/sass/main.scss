@@ -25,9 +25,6 @@
 @import "base/links.scss";
 
 @import "objects/header.scss";
-@import "components/header.scss";
-@import "objects/header-r.scss";
-
 @import "objects/biography.scss";
 @import "objects/biography-r.scss";
 @import "objects/medias.scss";
@@ -35,6 +32,9 @@
 @import "objects/footer.scss";
 @import "objects/footer-r.scss";
 
-
+@import "components/header.scss";
+@import "components/burgerIcon.scss";
 @import "components/biography.scss";
 @import "components/footer.scss";
+
+@import "objects/header-r.scss";

@@ -11,7 +11,7 @@
 (function () {
     "use strict";
 
-    let $icon = document.getElementById("navIcon");
+    let $icon = document.getElementById("navIconSVG");
 
     const fToggleNav = function () {
         $icon.classList.toggle("open");

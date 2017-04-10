@@ -3,33 +3,14 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 142 142" style="enable-background:new 0 0 142 142;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
-	.st1{fill:#FFFFFF;}
+	.st0{fill:#FFFFFF;}
 </style>
-<rect x="939" y="-256" transform="matrix(0.7071 0.7071 -0.7071 0.7071 144.0074 -759.6646)" width="100" height="100"/>
-<rect x="1185" y="-256" transform="matrix(0.7071 0.7071 -0.7071 0.7071 216.0591 -933.6129)" width="100" height="100"/>
 <g>
-	<line class="st0" x1="1216.4" y1="-226" x2="1253.2" y2="-188.6"/>
-	<line class="st0" x1="1254.3" y1="-224.8" x2="1217" y2="-187.5"/>
-</g>
-<g>
-	<line class="st0" x1="955.8" y1="-207" x2="1022.2" y2="-207"/>
-	<line class="st0" x1="1015.4" y1="-224.2" x2="962.6" y2="-224.2"/>
-	<line class="st0" x1="1015.4" y1="-189.8" x2="962.6" y2="-189.8"/>
-</g>
-<rect x="660" y="23" transform="matrix(0.7071 0.7071 -0.7071 0.7071 259.573 -480.6646)" width="100" height="100"/>
-<g>
-	
-		<rect x="707.3" y="45.5" transform="matrix(0.7125 -0.7017 0.7017 0.7125 153.7616 518.6888)" class="st1" width="5" height="52.4"/>
-	
-		<rect x="684.3" y="70.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 156.6395 523.8532)" class="st1" width="52.8" height="5"/>
-</g>
-<g>
-	<rect x="21" y="21" transform="matrix(0.7071 0.7071 -0.7071 0.7071 71 -29.4092)" width="100" height="100"/>
+	<rect x="21" y="21" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -29.4085 70.9997)" width="100" height="100"/>
 	<g>
-		<rect x="37.8" y="67.5" class="st1" width="66.4" height="5"/>
-		<rect x="44.6" y="50.3" class="st1" width="52.8" height="5"/>
-		<rect x="44.6" y="84.7" class="st1" width="52.8" height="5"/>
+		<rect x="37.8" y="67.5" class="st0" width="66.4" height="5"/>
+		<rect x="44.6" y="50.3" class="st0" width="52.8" height="5"/>
+		<rect x="44.6" y="84.7" class="st0" width="52.8" height="5"/>
 	</g>
 </g>
 </svg>
