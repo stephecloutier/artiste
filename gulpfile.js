@@ -12,6 +12,7 @@ var gulp = require("gulp"),
     autoprefixer = require("gulp-autoprefixer"),
     csso = require("gulp-csso"),
     pug = require("gulp-pug"),
+    babel = require("gulp-babel"),
     sourcemaps = require("gulp-sourcemaps"),
     browserSync = require("browser-sync").create();
 
@@ -65,6 +66,14 @@ gulp.task("sync", ['css'], function() {
             .pipe(gulp.dest("./pages"))
    });
 
+// --- Tasks for js
+
+    gulp.task("js", function(){
+        gulp.src("src/js/**/*.js")
+            .pipe(babel())
+            .pipe(gulp.dest("assets/js"))
+    })
+
 
 // --- Watch tasks
 
@@ -72,9 +81,10 @@ gulp.task("sync", ['css'], function() {
         gulp.watch("src/images/**", ["images"]);
         gulp.watch("src/sass/**/*.scss", ["css"]);
         gulp.watch("src/pug/**/*.pug", ["html"]);
+        gulp.watch("src/js/**/*.js", ["js"]);
    });
 
 // --- Aliases
 
-    gulp.task("default", ["images", "sync", "html", "css"]);
+    gulp.task("default", ["images", "sync", "html", "css", "js"]);
     gulp.task("work", ["default", "watch"]);
