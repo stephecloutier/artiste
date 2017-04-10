@@ -26,6 +26,7 @@
     .header__title {
         max-width: 80%;
     }
+    @include burgerIcon;
 }
 @media screen and (max-width: 300px) {
     .header__title {

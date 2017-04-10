@@ -17,6 +17,7 @@ mixin header(page, location)
                 a(href="#" class="header__logo-link")
                     | Imagine Dragons
                     +logo("header__img")
+            +navIcon
             +mainNav(page, location)
     else
         header(class="header")        
@@ -24,6 +25,7 @@ mixin header(page, location)
                 a(href="../index.html" class="header__logo-link")
                     | Imagine Dragons
                     +logo("header__img")
+            +navIcon
             +mainNav(page, location)
                     
 
@@ -129,7 +131,14 @@ mixin svgDefs
                     feFuncA(type="linear" slope="0.5")
                 feMerge
                     feMergeNode
-                    feMergeNode(in="SourceGraphic")                  
+                    feMergeNode(in="SourceGraphic")
+                        
+mixin navIcon 
+    div#navIcon.nav__icon
+        span
+        span
+        span
+        span
 
 mixin logo(className)
     svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 90" class=""+className)
@@ -159,3 +168,4 @@ mixin mediasFigures(src, alt, date, desc)
         figcaption.medias__caption 
             time(datetime=""+date class="medias__date")= date
             p.medias__desc= desc
+            
