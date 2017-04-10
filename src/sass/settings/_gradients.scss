@@ -1,3 +1,5 @@
+$d-lPurple: linear-gradient(to bottom right, $dPurple, $lPurple);
+
 .svgBaseGradient {
     &>.svgGradient--stop1 {
         stop-color: $dPurple;

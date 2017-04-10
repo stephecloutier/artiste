@@ -1,6 +1,6 @@
 .header {
     background-color: $dPurple;
-    background: linear-gradient(to bottom right, $dPurple, $lPurple);
+    background: $d-lPurple;
     color: white;
     &.header--home {
         background: transparent url(../images/cover_image.jpg) no-repeat;
