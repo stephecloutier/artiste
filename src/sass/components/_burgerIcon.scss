@@ -1,11 +1,13 @@
 .navIconSVG {
     display: none;
-    width: 3em;
-    height: 3em;
-    margin: 2em;
     cursor: pointer;
+    transition: .25s ease-in-out;
     .svg__rect {
         fill: white;
+        transform-origin: 50% 50%;
+        transform: rotate(45deg);
+        transition: .25s ease-in-out;
+        filter: url("#dropshadow");
     }
     .svg__group {
         transform: rotate(0deg);
@@ -24,6 +26,7 @@
 
     }
     &.open {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
         .svg__line--1 {
             opacity: 0;
             transform: translateY(17.2px);
@@ -37,6 +40,11 @@
         .svg__line--4 {
             opacity: 0;
             transform: translateY(-17.2px);
+        }
+        .svg__rect {
+            transform: rotate(0deg);
+            transform: scale(1.5);
+            filter: none;
         }
     }
 }

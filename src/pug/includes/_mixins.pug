@@ -17,7 +17,6 @@ mixin header(page, location)
                 a(href="#" class="header__logo-link")
                     | Imagine Dragons
                     +logo("header__img")
-            +navIconSVG
             +mainNav(page, location)
     else
         header(class="header")        
@@ -25,7 +24,6 @@ mixin header(page, location)
                 a(href="../index.html" class="header__logo-link")
                     | Imagine Dragons
                     +logo("header__img")
-            +navIconSVG
             +mainNav(page, location)
                     
 
@@ -62,8 +60,9 @@ mixin socialNav(location)
 
 mixin mainNav(page, location)
     nav(title= location+" Navigation" class= location+"__nav")
+        +navIconSVG
         h2 #{location} navigation
-        ul(class= location+"__list")
+        ul(class= location+"__list  nav--hidden" id="menuList")
             if page == "Home"
                 li(class= location+"__li")
                     a(href="pages/medias.html" title="medias" class= location+"__link") Medias
@@ -101,7 +100,7 @@ mixin mainNav(page, location)
                     a(href="music.html" title="music" class= location+"__link") Music
                 li(class= location+"__li")
                     a(href="#" title="shows" class= location+"__link") Shows
-                li(class= location+"__li")
+                li(class= location+"__li"+" "+location+"__li--last")
                     a(href="news.html" title="news" class= location+"__link") News
 
             else if page == "News"
@@ -132,13 +131,6 @@ mixin svgDefs
                 feMerge
                     feMergeNode
                     feMergeNode(in="SourceGraphic")
-                        
-mixin navIcon 
-    div#navIcon.nav__icon
-        span
-        span
-        span
-        span
 
 mixin logo(className)
     svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 90" class=""+className)
@@ -164,7 +156,7 @@ mixin instagram-icon(className)
             
 mixin navIconSVG
     svg(version="1.1" id="navIconSVG" class="navIconSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 142 142" style="enable-background:new 0 0 142 142;" xml:space="preserve")
-        rect(x="21" y="21" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -29.4085 70.9997)" width="100" height="100" class="svg__rect")
+        rect(x="21" y="21" width="100" height="100" class="svg__rect")
         g.svg__group
             
             rect(x="44.6" y="50.3" class="svg__line svg__line--1" width="52.8" height="5")
