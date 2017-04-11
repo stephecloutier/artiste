@@ -1,0 +1,46 @@
+@media screen and (max-width: 950px) {
+    .music {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .music {
+        width: 80%;
+    }
+    .album__content {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .album__img {
+        margin-bottom: 1.5em;
+        width: 220px;
+        height: 220px;
+        display: none;
+    }
+    .album__list {
+        width: 100%;
+        .album__song {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .album__list {
+        flex-wrap: nowrap;
+        &.album__list--1, &.album__list--2, &.album__list--3, &.album__list--4 {
+            max-height: none;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .music {
+        width: 95%;
+        .album {
+            padding: 1em;
+        }
+    }
+}
