@@ -25,13 +25,11 @@
 @media screen and (max-width: 460px){
     .nav--hidden {
         opacity: 0;
-        //height: 0;
         z-index: -1;
         transition: 0.25s ease-in-out;
     }
     .nav--transition {
         opacity: 1;
-        //height: auto;
         z-index: auto;
     }
     .header {
@@ -43,16 +41,23 @@
     }
 
     .header__title {
+        min-height: 40px;
         max-width: 85%;
     }
 
+    .header__logo-link {
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+    }
+
     .header__nav {
-        height: 37.5px;
+        height: 40px;
         position: relative;
     }
 
     .navIconSVG {
-        width: 2.5em;
+        width: 2.3em;
         display: inline-block;
         margin-right: 1em;
     }
@@ -60,8 +65,6 @@
     .header__list {
         width: 50vw;
         position: absolute;
-        //top: 37.5px;
-        //left: -1em;
         top: 4em;
         flex-direction: column;
         background: white;
@@ -91,5 +94,19 @@
 @media screen and (max-width: 300px) {
     .header__title {
         width: 240px;
+    }
+
+    .header__nav {
+        display: flex;
+        align-items: center;
+    }
+    .navIconSVG {
+        width: 1.8em;
+        position: relative;
+        top: -.2em;
+    }
+
+    .header__list {
+        top: 3em;
     }
 }
