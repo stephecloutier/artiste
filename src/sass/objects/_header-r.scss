@@ -23,6 +23,12 @@
 }
 
 @media screen and (max-width: 460px){
+    .header {
+        &.header--home {
+            min-height: 60vh;
+        }
+    }
+
     .nav--hidden {
         opacity: 0;
         z-index: -1;
@@ -64,6 +70,7 @@
 
     .header__list {
         width: 50vw;
+        min-width: 95px;
         position: absolute;
         top: 4em;
         flex-direction: column;
@@ -92,6 +99,12 @@
     }
 }
 @media screen and (max-width: 300px) {
+    .header {
+        padding-top: 0.5em;
+        &.header--home {
+            min-height: 40vh;
+        }
+    }
     .header__title {
         width: 240px;
     }
