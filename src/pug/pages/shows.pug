@@ -8,75 +8,114 @@ html
         +header("Shows", "header")
 
         main
-            section(title="Shows")
-                h1 
+            section(title="Shows" class="shows")
+                h1.shows__title
                     span Shows
 
-                article(title="Show 1")
-                    h3 Show 1
+                article(title="Rock Werchter" class="shows__show show")
+                    h3.show__title Rock Werchter
+                    dl.show__list
+                        dt.show__dt Place
+                        dd.show__dd.show__place Festivalpark, Werchter, Belgium
+
+                        dt.show__dt Date
+                        dd.show__dd
+                            time(datetime="2017-06-29" class="show__date") June 29<sup>th</sup> 2017
+
+                        dt.show__dt Time
+                        dd.show__dd
+                            time(datetime="20:00+2:00" class="show__time") 8:00 PM
+
+                        dt.show__dt Price
+                        dd.show__dd.show__price $100.00
+                    a(href="#buyTickets" class="show__button") Buy tickets
+
+                article(title="Arena di Verona" class="shows__show show")
+                    h3 Arena di Verona
                     dl
-                        dt Lieu
-                        dd Centre Bell
+                        dt.show__dt Place
+                        dd.show__dd.show__place Arena di Verona, Verona Vr, Italy
 
-                        dt Date
-                        dd
-                            time(datetime="2000-01-01") La Date du Show 1
+                        dt.show__dt Date
+                        dd.show__dd
+                            time(datetime="2017-07-03" class="show__date") July 3<sup>rd</sup> 2017
 
-                        dt Time
-                        dd
-                            time(datetime="2000-01-01") L'heure du Show 1
+                        dt.show__dt Time
+                        dd.show__dd
+                            time(datetime="21:00+2:00" class="show__time") 9:00 PM
 
-                        dt Prix
-                        dd $20.00
-                    a(href="#KMI") Keep me informed!
+                        dt.show__dt Price
+                        dd.show__dd.show__price $60.00
+                    a(href="#buyTickets" class="show__button") Buy tickets
 
-                article(title="Show 2")
-                    h3 Show 2
+                article(title="Lucca summer festival" class="shows__show show")
+                    h3 Lucca summer festival
                     dl
-                        dt Lieu
-                        dd Centre Bell
+                        dt.show__dt Place
+                        dd.show__dd.show__place Piazza Napoleone, Lucca, Italy
 
-                        dt Date
-                        dd
-                            time(datetime="2000-01-01") La Date du Show 2
+                        dt.show__dt Date
+                        dd.show__dd
+                            time(datetime="2017-07-04" class="show__date") July 4<sup>th</sup> 2017
 
-                        dt Time
-                        dd
-                            time(datetime="2000-01-01") L'heure du Show 2
+                        dt.show__dt Time
+                        dd.show__dd
+                            time(datetime="21:30+2:00" class="show__time") 9:30 PM
 
-                        dt Prix
-                        dd $20.00
-                    a(href="#KMI") Keep me informed!
-
-                article(title="Show 3")
-                    h3 Show 3
+                        dt.show__dt Price
+                        dd.show__dd.show__price $40.00
+                    a(href="#buyTickets" class="show__button") Buy tickets
+                    
+                article(title="Nos Alive Festival" class="shows__show show")
+                    h3 Nos Alive Festival
                     dl
-                        dt Lieu
-                        dd Centre Bell
+                        dt.show__dt Place
+                        dd.show__dd.show__place NOS Stage, Lisbon, Portugal
 
-                        dt Date
-                        dd
-                            time(datetime="2000-01-01") La Date du Show 3
+                        dt.show__dt Date
+                        dd.show__dd
+                            time(datetime="2017-07-08" class="show__date") July 8<sup>th</sup> 2017
 
-                        dt Time
-                        dd
-                            time(datetime="2000-01-01") L'heure du Show 3
+                        dt.show__dt Time
+                        dd.show__dd
+                            time(datetime="18:30+2:00" class="show__time") 6:30 PM
 
-                        dt Prix
-                        dd $20.00
-                    a(href="#KMI") Keep me informed!
+                        dt.show__dt Price
+                        dd.show__dd.show__price $59.00
+                    a(href="#buyTickets" class="show__button") Buy tickets
 
-            section(title="Keep me informed" id="KMI")
-                h2 Keep me informed
+            section(title="Buy tickets" id="buyTickets" class="tickets")
+                h2 Buy tickets
 
-                form(action="#" method="POST")
-                    label(for="formName") Name
-                    input(type="text" name="name" id="formName" placeholder="John Doe" required="required")
+                form(action="#" method="POST" class="tickets__form form")
+                    
+                    label(for="formShow" class="form__label") Show
+                    select(name="show" id="formShow" required="required" class="form__select")
+                        option(value="Rock Werchter" selected="selected" class="form__option") Rock Werchter
+                        option(value="Arena di Verona" class="form__option") Arena di Verona
+                        option(value="Lucca summer festival" class="form__option") Lucca summer festival
+                        option(value="Nos Alive Festival" class="form__option") Nos Alive Festival
+                        
+                    div.form__date-wrapper
+                        h3.form__label Date
+                        time(datetime="2017-06-29" class="form__date") June 29<sup>th</sup> 2017
+                    div.form__price-wrapper
+                        h3.form__label Price
+                        p.form__price $100.00
+                    
+                    label(for="formNb" class="form__label") Number of tickets
+                    input(type="number" name="formNb" id="formNb" value="1" required="required" class="form__input")
+                        
+                    label(for="formLastName" class="form__label") Last name
+                    input(type="text" name="formLastName" id="formLastName" placeholder="Doe" required="required" class="form__input")
+                        
+                    label(for="formFirstName" class="form__label") First name
+                    input(type="text" name="formFirstName" id="formFirstName" placeholder="John" required="required" class="form__input")
 
-                    label(for="formMail") Email
-                    input(type="email" name="mail" id="formMail" placeholder="johndoe@email.com" required="required")
+                    label(for="formEmail" class="form__label") Email
+                    input(type="email" name="formEmail" id="formEmail" placeholder="johndoe@email.com" required="required" class="form__input")
 
-                    button(type="submit") Keep me informed!
+                    button(type="submit" class="form__button") Buy
 
         +footer("Shows")
         script(src="../assets/js/script.js")
