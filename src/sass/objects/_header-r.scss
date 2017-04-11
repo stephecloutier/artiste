@@ -23,19 +23,15 @@
 }
 
 @media screen and (max-width: 460px){
-    .header {
-        &.header--home {
-            min-height: 60vh;
-        }
-    }
-
     .nav--hidden {
         opacity: 0;
+        //height: 0;
         z-index: -1;
         transition: 0.25s ease-in-out;
     }
     .nav--transition {
         opacity: 1;
+        //height: auto;
         z-index: auto;
     }
     .header {
@@ -44,6 +40,9 @@
         justify-content: space-between;
         padding: 2em 1em 1.5em;
         background: $dPurple;
+        &.header--home {
+            min-height: 60vh;
+        }
     }
 
     .header__title {
@@ -59,6 +58,7 @@
 
     .header__nav {
         height: 40px;
+        max-width: 85%;
         position: relative;
     }
 
