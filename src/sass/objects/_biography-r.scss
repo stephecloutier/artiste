@@ -10,3 +10,9 @@
         margin: 0 auto;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .biography__title {
+        font-size: 1.2em;
+    }
+}
