@@ -9,10 +9,11 @@
 }
 
 .new__presentation {
-    background: transparent url("../images/news_2017-01-31.jpg") no-repeat;
     background-size: 900px auto;
     background-position: center center;
 }
+
+@include newsBgImg($dates);
 
 .new__content {
     width: 100%;

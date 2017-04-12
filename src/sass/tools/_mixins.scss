@@ -38,3 +38,11 @@
 @mixin bigButtonHover($backColor) {
     background-color: $backColor;
 }
+
+@mixin newsBgImg($dates) {
+    @each $date in $dates {
+        .new__presentation--#{$date} {
+            background-image: url("../images/news_"+$date+".jpg")
+        }
+    }
+}
