@@ -10,6 +10,7 @@
 @import "settings/colors.scss";
 @import "settings/gradients.scss";
 @import "settings/fonts.scss";
+@import "settings/shadow.scss";
 
 @import "tools/mixins.scss";
 
@@ -32,6 +33,7 @@
 @import "objects/medias.scss";
 @import "objects/medias-r.scss";
 @import "objects/music.scss";
+@import "objects/news.scss";
 @import "objects/footer.scss";
 @import "objects/footer-r.scss";
 
@@ -39,6 +41,8 @@
 @import "components/burgerIcon.scss";
 @import "components/biography.scss";
 @import "components/album.scss";
+@import "components/medias.scss";
+@import "components/new.scss";
 @import "components/footer.scss";
 
 @import "objects/header-r.scss";

@@ -1,0 +1,48 @@
+.news__new {
+    border: 2px solid $dPurple;
+}
+
+.new__date {
+    color: white;
+    text-shadow: $boxShadow;
+    letter-spacing: 0.1em;
+}
+
+.new__presentation {
+    background: transparent url("../images/news_2017-01-31.jpg") no-repeat;
+    background-size: 900px auto;
+    background-position: center center;
+}
+
+.new__content {
+    width: 100%;
+    min-height: 200px;
+    color: $grey;
+    .new__title {
+        color: $dPurple;
+        letter-spacing: 0.1em;
+    }
+}
+
+.new__more {
+    text-transform: uppercase;
+    color: $dPurple;
+    letter-spacing: 0.1em;
+    transition: 0.25s ease-in-out;
+    &:hover {
+        color: $lPurple;
+    }
+    &::after {
+        content: "\2192";
+        display: inline-block;
+        margin-left: 0.3em;
+        font-size: 1.2em;
+    }
+}
+
+.news__more {
+    @include bigButton($dPurple, white);
+    &:hover {
+        @include bigButtonHover($lPurple);
+    }
+}
