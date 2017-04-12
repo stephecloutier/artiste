@@ -75,7 +75,7 @@
         top: 4em;
         flex-direction: column;
         background: white;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        box-shadow: $boxShadow;
     }
     .header__li {
         width: 100%;
