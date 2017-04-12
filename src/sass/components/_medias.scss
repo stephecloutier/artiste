@@ -1,0 +1,6 @@
+.medias__more {
+    @include bigButton($dPurple, white);
+    &:hover {
+        @include bigButtonHover($lPurple);
+    }
+}
