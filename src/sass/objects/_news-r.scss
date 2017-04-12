@@ -1,0 +1,24 @@
+@media screen and (max-width: 1000px) {
+    .news__new {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .new__content {
+        align-items: center;
+        text-align: center;
+        .new__title {
+            text-align: center;
+        }
+        .new__more {
+            align-self: center;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .news__more {
+        font-size: 0.833em;
+    }
+}
