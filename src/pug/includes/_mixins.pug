@@ -182,3 +182,12 @@ mixin mediasFigures(src, alt, date, desc)
             time(datetime=""+date class="medias__date")= date
             p.medias__desc= desc
             
+            
+mixin news(date, datetime, alt, title, desc, href)
+    article(title=""+title class="news__new new")
+        h3.new__title #{title}
+        figure.new__figure
+            img(src="../assets/images/news_"+datetime+".jpg" alt=""+alt class="new__img" width="900" height="auto")
+        time(datetime=""+datetime class="new__date")!= date
+        p.new__description!= desc
+        a(href=""+href title="More about \""+title+"\"" class="new__more") Read more
