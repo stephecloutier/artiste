@@ -31,6 +31,10 @@
     margin-right: 1em;
 }
 
+.footer-social__link--hidden {
+    @include hidden;
+}
+
 .footer-social__icon {
     width: 1em;
     height: 1em;

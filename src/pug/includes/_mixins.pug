@@ -55,17 +55,22 @@ mixin socialNav(location)
             li(class=location+"-social__li")
                 a(href="https://www.facebook.com/ImagineDragons/" title="Visit our Facebook Page" class=location+"-social__link")
                     +facebook-icon(location+"-social__icon")
+                    span(class=location+"-social__link--hidden") Facebook
                     
             li(class=location+"-social__li")
                 a(href="https://www.youtube.com/user/ImagineDragons" title="Visit our Youtube Channel" class=location+"-social__link")
                     +youtube-icon(location+"-social__icon")
+                    span(class=location+"-social__link--hidden") Youtube
                     
             li(class=location+"-social__li")
                 a(href="https://twitter.com/Imaginedragons" title="Visit our Twitter" class=location+"-social__link")
                     +twitter-icon(location+"-social__icon")
+                    span(class=location+"-social__link--hidden") Twitter
+                    
             li(class=location+"-social__li")
                 a(href="https://www.instagram.com/imaginedragons/" title="Visit our Instagram" class=location+"-social__link")
                     +instagram-icon(location+"-social__icon")
+                    span(class=location+"-social__link--hidden") Instagram
 
 
 mixin mainNav(page, location)
@@ -182,12 +187,12 @@ mixin mediasFigures(src, alt, date, desc)
             time(datetime=""+date class="medias__date")= date
             p.medias__desc= desc
             
-            
-mixin news(date, datetime, alt, title, desc, href)
+                
+mixin news(date, datetime, title, desc, href)
     article(title=""+title class="news__new new")
-        h3.new__title #{title}
-        figure.new__figure
-            img(src="../assets/images/news_"+datetime+".jpg" alt=""+alt class="new__img" width="900" height="auto")
-        time(datetime=""+datetime class="new__date")!= date
-        p.new__description!= desc
-        a(href=""+href title="More about \""+title+"\"" class="new__more") Read more
+        div.new__presentation
+            time(datetime=""+datetime class="new__date")!= date
+        div.new__content
+            h2.new__title #{title}
+            p.new__description!= desc
+            a(href=""+href title="More about \""+title+"\"" class="new__more") Read more<span class="new__more--hidden"> about "#{title}"</span>
