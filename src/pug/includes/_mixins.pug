@@ -31,8 +31,17 @@ mixin footer(page)
     footer(title="Footer" class="footer")
         div.footer__wrapper
             +socialNav("footer")
-                                    
+            
+                          
             div.footer__small-wrapper
+                nav(title="Buy our music" class="footer__buy-nav buy-nav")
+                    h2.buy-nav__title Buy our music
+                    ul.buy-nav__list
+                        li.buy-nav__li
+                            a(href="https://www.amazon.com/Imagine-Dragons/e/B007AUFJKY/ref=dp_byline_cont_music_1" title="Buy our music on Amazon" class="buy-nav__link") Amazon
+                        li.buy-nav__li
+                            a(href="https://itunes.apple.com/us/artist/imagine-dragons/id358714030" title="Buy our music on iTunes"  class="buy-nav__link") iTunes  
+                            
                 small(class="footer__small footer__small--copy") &copy;&nbsp;Stéphanie Cloutier
                 
                 a(href="mailto:stephecloutier@gmail.com" title="Send me an email" class="footer__link footer__link--mail")
