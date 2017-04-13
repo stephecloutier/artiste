@@ -31,14 +31,11 @@
 
 @import "objects/header.scss";
 @import "objects/biography.scss";
-@import "objects/biography-r.scss";
 @import "objects/medias.scss";
-@import "objects/medias-r.scss";
 @import "objects/music.scss";
 @import "objects/shows.scss";
 @import "objects/news.scss";
 @import "objects/footer.scss";
-@import "objects/footer-r.scss";
 
 @import "components/header.scss";
 @import "components/burgerIcon.scss";
@@ -50,5 +47,9 @@
 @import "components/footer.scss";
 
 @import "objects/header-r.scss";
+@import "objects/biography-r.scss";
+@import "objects/medias-r.scss";
 @import "objects/music-r.scss";
+@import "objects/shows-r.scss";
 @import "objects/news-r.scss";
+@import "objects/footer-r.scss";

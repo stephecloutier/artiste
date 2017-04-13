@@ -1,3 +1,7 @@
+.shows {
+    align-items: center;
+}
+
 .shows__wrapper {
     display: flex;
     flex-direction: row;
@@ -9,12 +13,8 @@
 }
 
 .shows__show {
-    width: calc(450px - 1em);
-    margin-bottom: 2em;
-    //min-height: calc(400px);
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
+    width: calc(450px - 2em);
+    margin: 0 auto 2em;
 }
 
 .show__title, .show__wrapper {
