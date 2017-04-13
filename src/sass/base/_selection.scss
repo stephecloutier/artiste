@@ -1,0 +1,6 @@
+::selection {
+  background: $turquoise; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $turquoise; /* Gecko Browsers */
+}
