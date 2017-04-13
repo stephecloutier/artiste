@@ -186,8 +186,22 @@ mixin mediasFigures(src, alt, date, desc)
         figcaption.medias__caption 
             time(datetime=""+date class="medias__date")= date
             p.medias__desc= desc
-            
-                
+
+mixin show(title, place, datetime, date, date_time, time, price)
+    article(title=""+title class="shows__show show")
+        h3.show__title
+            span.show__title--text!= title
+        div.show__wrapper
+            div.show__infos
+                p.show__p.show__place!= place
+                div.show__datetime
+                    p.show__p
+                        time(datetime=""+datetime class="show__date")!= date
+                    p.show__p
+                        time(datetime=""+date_time+"2:00" class="show__time")!= time
+                p.show__p.show__price!= price
+            a(href="#buyTickets" class="show__button") Buy tickets
+                            
 mixin news(date, datetime, title, desc, href)
     article(title=""+title class="news__new new")
         div(class="new__presentation new__presentation--"+datetime)

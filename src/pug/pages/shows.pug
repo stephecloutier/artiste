@@ -12,77 +12,15 @@ html
                 h1.shows__title
                     span Shows
 
-                article(title="Rock Werchter" class="shows__show show")
-                    h3.show__title Rock Werchter
-                    dl.show__list
-                        dt.show__dt Place
-                        dd.show__dd.show__place Festivalpark, Werchter, Belgium
-
-                        dt.show__dt Date
-                        dd.show__dd
-                            time(datetime="2017-06-29" class="show__date") June 29<sup>th</sup> 2017
-
-                        dt.show__dt Time
-                        dd.show__dd
-                            time(datetime="20:00+2:00" class="show__time") 8:00 PM
-
-                        dt.show__dt Price
-                        dd.show__dd.show__price $100.00
-                    a(href="#buyTickets" class="show__button") Buy tickets
-
-                article(title="Arena di Verona" class="shows__show show")
-                    h3 Arena di Verona
-                    dl
-                        dt.show__dt Place
-                        dd.show__dd.show__place Arena di Verona, Verona Vr, Italy
-
-                        dt.show__dt Date
-                        dd.show__dd
-                            time(datetime="2017-07-03" class="show__date") July 3<sup>rd</sup> 2017
-
-                        dt.show__dt Time
-                        dd.show__dd
-                            time(datetime="21:00+2:00" class="show__time") 9:00 PM
-
-                        dt.show__dt Price
-                        dd.show__dd.show__price $60.00
-                    a(href="#buyTickets" class="show__button") Buy tickets
-
-                article(title="Lucca summer festival" class="shows__show show")
-                    h3 Lucca summer festival
-                    dl
-                        dt.show__dt Place
-                        dd.show__dd.show__place Piazza Napoleone, Lucca, Italy
-
-                        dt.show__dt Date
-                        dd.show__dd
-                            time(datetime="2017-07-04" class="show__date") July 4<sup>th</sup> 2017
-
-                        dt.show__dt Time
-                        dd.show__dd
-                            time(datetime="21:30+2:00" class="show__time") 9:30 PM
-
-                        dt.show__dt Price
-                        dd.show__dd.show__price $40.00
-                    a(href="#buyTickets" class="show__button") Buy tickets
+                div.shows__wrapper
                     
-                article(title="Nos Alive Festival" class="shows__show show")
-                    h3 Nos Alive Festival
-                    dl
-                        dt.show__dt Place
-                        dd.show__dd.show__place NOS Stage, Lisbon, Portugal
+                    +show("Rock Werchter", "<strong class='show__place--main'>Festivalpark</strong> Werchter, Belgium", "2017-06-29", "June 29<sup>th</sup> 2017", "20:00", "8:00 PM", "$100.00")
+                    
+                    +show("Arena di Verona", "<strong class='show__place--main'>Arena di Verona</strong> Verona Vr, Italy", "2017-07-03", "July 3<sup>rd</sup> 2017", "21:00", "9:00 PM", "$60.00")
 
-                        dt.show__dt Date
-                        dd.show__dd
-                            time(datetime="2017-07-08" class="show__date") July 8<sup>th</sup> 2017
+                    +show("Lucca summer festival", "<strong class='show__place--main'>Piazza Napoleone</strong> Lucca, Italy", "2017-07-04", "July 4<sup>th</sup> 2017", "21:30", "9:30 PM", "$40.00")
 
-                        dt.show__dt Time
-                        dd.show__dd
-                            time(datetime="18:30+2:00" class="show__time") 6:30 PM
-
-                        dt.show__dt Price
-                        dd.show__dd.show__price $59.00
-                    a(href="#buyTickets" class="show__button") Buy tickets
+                    +show("Nos Alive Festival", "<strong class='show__place--main'>NOS Stage</strong> Lisbon, Portugal", "2017-07-08", "July 8<sup>th</sup> 2017", "18:30", "6:30 PM", "$59.00")
 
             section(title="Buy tickets" id="buyTickets" class="tickets")
                 h2 Buy tickets

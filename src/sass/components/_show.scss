@@ -1,0 +1,36 @@
+.show {
+    border: 4px solid $dPurple;
+    color: $grey;
+}
+
+.show__title {
+    background: $dPurple;
+    .show__title--text {
+        text-transform: uppercase;
+        color: white;
+        font-weight: 600;
+        font-size: 1.44em;
+        letter-spacing: 1.5px;
+    }
+}
+
+.show__infos  {
+    letter-spacing: 1.5px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    .show__place {
+        .show__place--main {
+            text-transform: uppercase;
+            ///font-weight: 600;
+        }
+    }
+}
+
+.show__button {
+    text-align: center;
+    width: 100%;
+    @include bigButton($dPurple, white);
+    &:hover {
+        @include bigButtonHover($lPurple);
+    }
+}
