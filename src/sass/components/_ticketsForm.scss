@@ -1,0 +1,57 @@
+.tickets {
+    background: $dPurple-turquoise;
+}
+
+.tickets__form {
+    background-color: white;
+}
+
+.tickets__title {
+    .tickets__title--text {
+        @include titleBorder(white);
+    }
+    &::after {
+        @include titleDiamond(white);
+    }
+}
+
+.form__label {
+    color: $grey;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.form__input, .form__select {
+    border: 2px solid $dPurple;
+}
+
+.form__date, .form__price {
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: $dPurple;
+    font-weight: 600;
+    //padding: 0.5em;
+}
+
+.form__button {
+    @include bigButton($dPurple, white);
+    padding: 0 5em;
+    &:hover {
+        @include bigButtonHover($lPurple);
+    }
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-style: italic;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   font-style: italic;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   font-style: italic;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   font-style: italic;
+}

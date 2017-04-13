@@ -1,0 +1,46 @@
+.tickets__form {
+    max-width: 900px;
+    width: 900px;
+    padding: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form--wrapper {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    min-height: 65px;
+
+    .form__label {
+        margin-bottom: 0.5em;
+        font-size: 1.2em;
+        &.form__label--sup {
+            margin-bottom: calc(0.5em - 3px);
+        }
+    }
+    &.form__email, &.form__validation {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+.form__button {
+    min-height: 38px;
+}
+
+.form__input, .form__option {
+    padding: 0.5em;
+    font-size: 1em;
+    width: 100%;
+}
+
+.form__select {
+    font-size: 1em;
+    min-height: 40px;
+}
