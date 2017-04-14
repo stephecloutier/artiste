@@ -5,13 +5,15 @@
 
 .show__title {
     background: $dPurple;
+    text-align: left;
+    font-size: 1em;
     .show__title--text {
         text-transform: uppercase;
         color: white;
         font-weight: 600;
-        font-size: 1.44em;
         letter-spacing: 1.5px;
         line-height: 1.2;
+        font-size: 1.44em;
     }
 }
 
