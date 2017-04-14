@@ -13,3 +13,16 @@
     @include titleBorder(white);
     margin: 0 auto;
 }
+
+.biography--highlight {
+    font-style: italic;
+}
+
+.biography__link {
+    font-style: normal;
+    text-decoration: underline;
+    transition: 0.25s ease-in-out;
+    &:hover {
+        color: $turquoise;
+    }
+}
