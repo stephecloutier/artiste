@@ -1,0 +1,37 @@
+@media screen and (max-width: 1000px) {
+    .tickets__form {
+        max-width: none;
+        width: 80%;
+        .form__button {
+            padding: 0 2em;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .tickets__form {
+        padding: 1.5em;
+        width: 90%;
+        .form--wrapper {
+            width: 47.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .tickets__form {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 2em;
+        .form--wrapper {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .tickets__title {
+        font-size: 1.2em;
+    }
+}
