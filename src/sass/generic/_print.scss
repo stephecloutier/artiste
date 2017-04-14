@@ -1,0 +1,25 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    color: black;
+}
+img, svg, section[title="Footer"], figure, figcaption, header nav {
+    display: none !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.medias__more, .show__button, .tickets, .new__more, .news__more {
+    display: none !important;
+}
+
+.album__title, .show__title, .new__title {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.album, .shows__show, .news__new {
+    margin-bottom: 3em;
+}

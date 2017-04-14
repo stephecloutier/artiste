@@ -7,56 +7,62 @@
 // Components : Designed components, chunks of UI
 // Trumps : Helpers and overrides
 
-@import "settings/colors.scss";
-@import "settings/gradients.scss";
-@import "settings/fonts.scss";
-@import "settings/shadow.scss";
-@import "settings/tables.scss";
+@media screen {
+    @import "settings/colors.scss";
+    @import "settings/gradients.scss";
+    @import "settings/fonts.scss";
+    @import "settings/shadow.scss";
+    @import "settings/tables.scss";
 
-@import "tools/mixins.scss";
-@import "tools/functions.scss";
+    @import "tools/mixins.scss";
+    @import "tools/functions.scss";
 
-@import "generic/reset.scss";
-@import "generic/boxsizing.scss";
+    @import "generic/reset.scss";
+    @import "generic/boxsizing.scss";
 
-@import "base/svg.scss";
-@import "base/widths.scss";
-@import "base/flex.scss";
-@import "base/vertical-spaces.scss";
-@import "base/text.scss";
-@import "base/titles.scss";
-@import "base/titles-r.scss";
-@import "base/links.scss";
-@import "base/sup.scss";
-@import "base/formElements.scss";
-@import "base/selection.scss";
+    @import "base/svg.scss";
+    @import "base/widths.scss";
+    @import "base/flex.scss";
+    @import "base/vertical-spaces.scss";
+    @import "base/text.scss";
+    @import "base/titles.scss";
+    @import "base/titles-r.scss";
+    @import "base/links.scss";
+    @import "base/sup.scss";
+    @import "base/formElements.scss";
+    @import "base/selection.scss";
 
-@import "objects/header.scss";
-@import "objects/biography.scss";
-@import "objects/medias.scss";
-@import "objects/music.scss";
-@import "objects/shows.scss";
-@import "objects/ticketsForm.scss";
-@import "objects/news.scss";
-@import "objects/footer.scss";
+    @import "objects/header.scss";
+    @import "objects/biography.scss";
+    @import "objects/medias.scss";
+    @import "objects/music.scss";
+    @import "objects/shows.scss";
+    @import "objects/ticketsForm.scss";
+    @import "objects/news.scss";
+    @import "objects/footer.scss";
 
-@import "components/header.scss";
-@import "components/burgerIcon.scss";
-@import "components/biography.scss";
-@import "components/album.scss";
-@import "components/medias.scss";
-@import "components/show.scss";
-@import "components/ticketsForm.scss";
-@import "components/new.scss";
-@import "components/footer.scss";
+    @import "components/header.scss";
+    @import "components/burgerIcon.scss";
+    @import "components/biography.scss";
+    @import "components/album.scss";
+    @import "components/medias.scss";
+    @import "components/show.scss";
+    @import "components/ticketsForm.scss";
+    @import "components/new.scss";
+    @import "components/footer.scss";
 
-@import "objects/header-r.scss";
-@import "objects/biography-r.scss";
-@import "objects/medias-r.scss";
-@import "objects/music-r.scss";
-@import "objects/shows-r.scss";
-@import "objects/ticketsForm-r.scss";
-@import "objects/news-r.scss";
-@import "objects/footer-r.scss";
+    @import "objects/header-r.scss";
+    @import "objects/biography-r.scss";
+    @import "objects/medias-r.scss";
+    @import "objects/music-r.scss";
+    @import "objects/shows-r.scss";
+    @import "objects/ticketsForm-r.scss";
+    @import "objects/news-r.scss";
+    @import "objects/footer-r.scss";
 
-@import "trumps/formTricks.scss";
+    @import "trumps/formTricks.scss";
+}
+
+@media print {
+    @import "generic/print.scss";
+}
