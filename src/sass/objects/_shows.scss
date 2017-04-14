@@ -15,16 +15,20 @@
 
 
 .shows__show {
-    width: calc(450px - 1em);
+    width: 430px;
     margin-bottom: 2em;
 }
 
-.show__title, .show__wrapper {
-    padding: 1.5em 2em;
+.show__title {
+    padding: 1.5rem;
+}
+
+.show__wrapper {
+    padding: 1.5rem;
 }
 
 .show__title {
-    min-height: 2em;
+    //min-height: 2em;
 }
 
 .show__wrapper {
@@ -34,7 +38,7 @@
 }
 
 .show__infos {
-    min-height: 165px;
+    min-height: 140px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

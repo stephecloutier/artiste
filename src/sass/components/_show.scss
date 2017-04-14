@@ -1,25 +1,26 @@
 .show {
-    border: 4px solid $dPurple;
+    border: 2px solid $dPurple;
     color: $grey;
 }
 
 .show__title {
-    background: $dPurple;
+    background: $d-lPurple;
+    //padding-bottom: 1em;
+    color: white;
+    font-size: 1.2em;
     text-align: left;
-    font-size: 1em;
+
     .show__title--text {
         text-transform: uppercase;
-        color: white;
         font-weight: 600;
-        letter-spacing: 1.5px;
+        letter-spacing: 3px;
         line-height: 1.2;
-        font-size: 1.44em;
     }
 }
 
 .show__infos  {
     letter-spacing: 1.5px;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.5;
     .show__place {
         .show__place--main {
@@ -32,8 +33,24 @@
 .show__button {
     text-align: center;
     width: 100%;
-    @include bigButton($dPurple, white);
+
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 1em;
+    padding-left: 0;
+    color: $dPurple;
+    border: 2px solid $dPurple;
+    transition: 0.25s ease-in-out;
+    //@include bigButton($dPurple, white);
+    //font-size: 1em;
     &:hover {
-        @include bigButtonHover($lPurple);
+        text-align: center;
+        //padding-left: 1em;
+        background-color: $lPurple;
+        border-color: $lPurple;
+        color: white;
+        //@include bigButtonHover($lPurple);
     }
 }
