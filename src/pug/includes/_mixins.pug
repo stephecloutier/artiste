@@ -28,14 +28,14 @@ mixin header(page, location)
                     
 
 mixin footer(page)
-    footer(title="Footer" class="footer")
+    section(title="Footer" class="footer")
+        h1 Footer
         div.footer__wrapper
             +socialNav("footer")
             
-            
             div.footer__infos
-                nav(title="Buy our music" class="footer__buy-nav buy-nav")
-                    h2.buy-nav__title Buy our music on
+                div(title="Buy our music" class="footer__buy-nav buy-nav")
+                    span.buy-nav__title Buy our music on
                     ul.buy-nav__list
                         li.buy-nav__li.buy-nav__li--amazon
                             a(href="https://www.amazon.com/Imagine-Dragons/e/B007AUFJKY/ref=dp_byline_cont_music_1" title="Buy our music on Amazon" class="buy-nav__link footer__link") Amazon
@@ -50,7 +50,7 @@ mixin footer(page)
                         
 mixin socialNav(location)
     nav(title="Social Medias" class=location+"-social__nav")
-        h3 Social Medias
+        h2 Social medias navigation
         ul(class=location+"-social__list")
             li(class=location+"-social__li")
                 a(href="https://www.facebook.com/ImagineDragons/" title="Visit our Facebook Page" class=location+"-social__link")
@@ -74,9 +74,9 @@ mixin socialNav(location)
 
 
 mixin mainNav(page, location)
-    nav(title= location+" Navigation" class= location+"__nav")
+    nav(title="Main navigation" class= location+"__nav")
         +navIconSVG
-        h2 #{location} navigation
+        h2 Main navigation
         ul(class= location+"__list  nav--hidden" id="menuList")
             if page == "Home"
                 li(class= location+"__li")
