@@ -80,6 +80,8 @@ mixin mainNav(page, location)
         ul(class= location+"__list  nav--hidden" id="menuList")
             if page == "Home"
                 li(class= location+"__li")
+                    a(href="#" title="home" class=location+"__link") Home
+                li(class= location+"__li")
                     a(href="pages/medias.html" title="medias" class= location+"__link") Medias
                 li(class= location+"__li")
                     a(href="pages/music.html" title="music" class= location+"__link") Music
@@ -89,6 +91,8 @@ mixin mainNav(page, location)
                     a(href="pages/news.html" title="news" class= location+"__link") News
 
             else if page == "Medias"
+                li(class= location+"__li")
+                    a(href="../index.html" title="home" class=location+"__link") Home
                 li(class= location+"__li")
                     a(href="#" title="medias" class= location+"__link") Medias
                 li(class= location+"__li")
@@ -100,6 +104,8 @@ mixin mainNav(page, location)
 
             else if page == "Music"
                 li(class= location+"__li")
+                    a(href="../index.html" title="home" class=location+"__link") Home
+                li(class= location+"__li")
                     a(href="medias.html" title="medias" class= location+"__link") Medias
                 li(class= location+"__li")
                     a(href="#" title="music" class= location+"__link") Music
@@ -110,6 +116,8 @@ mixin mainNav(page, location)
 
             else if page == "Shows"
                 li(class= location+"__li")
+                    a(href="../index.html" title="home" class=location+"__link") Home
+                li(class= location+"__li")
                     a(href="medias.html" title="medias" class= location+"__link") Medias
                 li(class= location+"__li")
                     a(href="music.html" title="music" class= location+"__link") Music
@@ -119,6 +127,8 @@ mixin mainNav(page, location)
                     a(href="news.html" title="news" class= location+"__link") News
 
             else if page == "News"
+                li(class= location+"__li")
+                    a(href="../index.html" title="home" class=location+"__link") Home
                 li(class= location+"__li")
                     a(href="medias.html" title="medias" class= location+"__link") Medias
                 li(class= location+"__li")
