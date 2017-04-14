@@ -45,3 +45,11 @@
         }
     }
 }
+
+@mixin showsBgImg($dates) {
+    @each $date in $dates {
+        .show--#{$date} {
+            background-image: url("../images/shows_"+$date+".jpg")
+        }
+    }
+}

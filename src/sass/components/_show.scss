@@ -3,11 +3,17 @@
     color: $grey;
 }
 
+@include showsBgImg($showsDates);
+
 .show__title {
-    background: $d-lPurple;
-    //padding-bottom: 1em;
+    //background: $d-lPurple;
+    //background-image: url("../images/festivalpark.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
     color: white;
-    font-size: 1.2em;
+    text-shadow: $boxShadow;
+    font-size: 1.44em;
     text-align: left;
 
     .show__title--text {

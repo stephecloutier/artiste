@@ -197,9 +197,9 @@ mixin mediasFigures(src, alt, date, desc)
             time(datetime=""+date class="medias__date")= date
             p.medias__desc= desc
 
-mixin show(title, place, datetime, date, date_time, time, price)
+mixin show(title, place, datetime, date, date_time, time, price, img)
     article(title=""+title class="shows__show show")
-        h2.show__title
+        h2(class="show__title show--"+datetime)
             span.show__title--text!= title
         div.show__wrapper
             div.show__infos

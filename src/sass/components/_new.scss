@@ -13,7 +13,7 @@
     background-position: center center;
 }
 
-@include newsBgImg($dates);
+@include newsBgImg($newsDates);
 
 .new__content {
     width: 100%;
