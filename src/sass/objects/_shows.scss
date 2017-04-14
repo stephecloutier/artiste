@@ -12,9 +12,11 @@
     justify-content: space-between;
 }
 
+
+
 .shows__show {
-    width: calc(450px - 2em);
-    margin: 0 auto 2em;
+    width: calc(450px - 1em);
+    margin-bottom: 2em;
 }
 
 .show__title, .show__wrapper {
