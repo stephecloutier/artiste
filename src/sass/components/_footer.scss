@@ -13,15 +13,18 @@
 
 
 .footer-social__icon {
-    fill: url("#baseGradient");
-    transition-duration: 0.8s;
-    transition-timing-function: ease-out;
+    //fill: url("#baseGradient");
+    //transition-duration: 0.8s;
+    //transition-timing-function: ease-out;
+    fill: $dPurple;
+    transition: 0.25s ease-in-out;
 }
 
 
 .footer-social__icon:hover {
-    fill: url("#hoverGradient");
-    opacity: 0.7;
+    //fill: url("#hoverGradient");
+    //opacity: 0.7;
+    fill: $lPurple;
 }
 
 .buy-nav__li--amazon::after {
