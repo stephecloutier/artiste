@@ -7,22 +7,22 @@ html(lang="fr")
         +header("Home", "header")
 
         main
-            section(title="Biography" class="biography")
+            section(title="Biography" class="biography" itemscope itemtype="http://schema.org/MusicGroup")
                 h2.biography__title 
                     span.biography--border Biography
                 div.biography__wrapper
                     div.biography__col
                         p.biography__p
-                            | Imagine Dragons is an American rock band from Las Vegas, Nevada. It currently consists of lead vocalist Dan Reynolds, lead guitarist Wayne Sermon, bassist Ben McKee, and drummer Daniel Platzman. 
+                            | <span itemprop="legalName">Imagine Dragons</span> is an American <span itemprop="genre">rock</span> band from <span itemprop="foundingLocation">Las Vegas, Nevada</span>. It currently consists of lead vocalist <span itemprop="member">Dan Reynolds</span>, lead guitarist <span itemprop="member">Wayne Sermon</span>, bassist <span itemprop="member">Ben McKee</span>, and drummer <span itemprop="member">Daniel Platzman</span>. 
                         p.biography__p
-                            | The band first gained exposure in 2012 with the releases of their debut studio album <a href="./pages/music.html#NightVisions" title="This link gets you to the music page" class="biography__link biography--highlight">Night Visions</a> and the album's first single <span class="biography--highlight">It's Time</span>. Billboard placed them at the top of their "Year In Rock" rankings for 2013 and named Imagine Dragons their "Breakthrough Band of 2013".
+                            | The band first gained exposure in 2012 with the releases of their debut studio album <a href="./pages/music.html#NightVisions" title="This link gets you to the music page" class="biography__link biography--highlight" itemprop="album">Night Visions</a> and the album's first single <span class="biography--highlight" itemprop="track">It's Time</span>. Billboard placed them at the top of their "Year In Rock" rankings for 2013 and named Imagine Dragons their "Breakthrough Band of 2013".
                         p.biography__p
-                            | Rolling Stone named their single <span class="biography--highlight">Radioactive</span>, from their <span class="biography--highlight">Night Visions</span>, "the biggest rock hit of the year", while MTV called them "the year's biggest breakout band".
+                            | Rolling Stone named their single <span class="biography--highlight" itemprop="track">Radioactive</span>, from their <span class="biography--highlight">Night Visions</span>, "the biggest rock hit of the year", while MTV called them "the year's biggest breakout band".
                     div.biography__col 
                         p.biography__p
-                            | <span class="biography--highlight">Night Visions</span> peaked at number two on the weekly Billboard 200 and UK Albums Chart. The band's second studio album <a href="./pages/music.html#Smoke+Mirrors" title="This link gets you to the music page" class="biography__link biography--highlight">Smoke + Mirrors</a> was released in 2015 and reached number one in the US, Canada and the UK.
+                            | <span class="biography--highlight">Night Visions</span> peaked at number two on the weekly Billboard 200 and UK Albums Chart. The band's second studio album <a href="./pages/music.html#Smoke+Mirrors" title="This link gets you to the music page" class="biography__link biography--highlight" itemprop="album">Smoke + Mirrors</a> was released in 2015 and reached number one in the US, Canada and the UK.
                         p.biography__p
-                            | Imagine Dragons has won two American Music Awards for Favorite Alternative Artist, a Grammy Award for Best Rock Performance, five Billboard Music Awards, and a World Music Award. In May 2014, the band was nominated for a total of fourteen different Billboard Music Awards, including Top Artist of the Year and a Milestone Award, which recognizes innovation and creativity of artists across different genres.
+                            | Imagine Dragons has won two <span itemprop="award">American Music Awards for Favorite Alternative Artist</span>, a <span itemprop="award">Grammy Award for Best Rock Performance</span>, five <span itemprop="award">Billboard Music Awards</span>, and a <span itemprop="award">World Music Award</span>. In May 2014, the band was nominated for a total of fourteen different Billboard Music Awards, including <span itemprop="award">Top Artist of the Year</span> and a <span itemprop="award">Milestone Award</span>, which recognizes innovation and creativity of artists across different genres.
                         p(class="biography__p biography__p--last")
                             | As of January 2017, Imagine Dragons have sold 9 million albums and 27 million singles worldwide.
 
