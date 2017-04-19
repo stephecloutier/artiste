@@ -220,3 +220,14 @@ mixin news(date, datetime, title, desc, href)
             h2.new__title #{title}
             p.new__description!= desc
             a(href=""+href title="More about \""+title+"\"" class="new__more") Read more<span class="new__more--hidden"> about "#{title}"</span>
+            
+mixin album(title, id, datetime, date, numero, songs)
+    article(title=title class="music__album album" id=id)
+        div.album__info
+            h2.album__title!= title
+            time(datetime=datetime class="album__date")!= date
+        div.album__content
+            img(src="../assets/images/" + id + ".jpg" alt=title + " (Album cover)" class="album__img")
+            ol(class="album__list album__list--"+numero)
+                each song in songs
+                    li.album__song!= song

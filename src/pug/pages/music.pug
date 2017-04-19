@@ -1,5 +1,6 @@
 doctype html
 include ../includes/_mixins.pug
+include ../includes/_datas.pug
 html
     +head("Music", "../")
 
@@ -10,100 +11,14 @@ html
             section(title="Music" class="music")
                 h1.music__title 
                     span Music
+                
+                +album("Smoke + Mirrors (Deluxe)", "smoke+mirrors_deluxe", "2015-10-30", "October 30<sup>th</sup> 2015", "1", albums['Smoke + Mirrors (Deluxe)'])
+                
+                +album("Smoke + Mirrors", "smoke+mirrors", "2015-02-17", "February 17<sup>th</sup> 2015", "2", albums['Smoke + Mirrors'])
 
-                article(title="Smoke+Mirrors (Deluxe)" class="music__album album" id="Smoke+Mirrors_deluxe")
-                    div.album__info
-                        h2.album__title Smoke + Mirrors (Deluxe)
-                        time(datetime="2015-10-30" class="album__date") October 30<sup>th</sup> 2015
-                    div.album__content
-                        img(src="../assets/images/smoke+mirrors_deluxe.jpg" alt="Smoke+Mirrors Deluxe (Album cover)" class="album__img")
-                        ol.album__list.album__list--1
-                            li.album__song Shots
-                            li.album__song Gold
-                            li.album__song Smoke And Mirrors
-                            li.album__song I'm So Sorry
-                            li.album__song I Bet My Life
-                            li.album__song Polaroid
-                            li.album__song Friction
-                            li.album__song It Comes Back To You
-                            li.album__song Dream
-                            li.album__song Trouble
-                            li.album__song Summer
-                            li.album__song Hopeless Opus
-                            li.album__song The Fall
-                            li.album__song Thief
-                            li.album__song The Unknown
-                            li.album__song Second Chances
-                            li.album__song Release
-                            li.album__song Warriors
-                            li.album__song Battle Cry
-                            li.album__song Monster
-                            li.album__song Who We Are
+                +album("Night Visions (Deluxe)", "nightvisions_deluxe", "2013-01-01", "January 1<sup>st</sup> 2013", "3", albums['Night Visions (Deluxe)'])
 
-                article(title="Smoke+Mirrors" class="music__album album album--second" id="Smoke+Mirrors")
-                    div.album__info
-                        h2.album__title Smoke + Mirrors
-                        time(datetime="2015-02-17" class="album__date") February 17<sup>th</sup> 2015
-                    div.album__content
-                        img(src="../assets/images/smoke+mirrors.jpg" alt="Smoke+Mirrors (Album cover)" class="album__img")
-                        ol.album__list.album__list--2
-                            li.album__song Shots
-                            li.album__song Gold
-                            li.album__song Smoke And Mirrors
-                            li.album__song I'm So Sorry
-                            li.album__song I Bet My Life
-                            li.album__song Polaroid
-                            li.album__song Friction
-                            li.album__song It Comes Back To You
-                            li.album__song Dream
-                            li.album__song Trouble
-                            li.album__song Summer
-                            li.album__song Hopeless Opus
-                            li.album__song The Fall
-
-                article(title="Night Visions (Deluxe)" class="music__album album album--third" id="NightVisions_deluxe")
-                    div.album__info
-                        h2.album__title Night Visions (Deluxe)
-                        time(datetime="2013-01-01" class="album__date") January 1<sup>st</sup> 2013
-                    div.album__content
-                        img(src="../assets/images/night-visions.jpg" alt="Night Visions Deluxe (Album cover)" class="album__img")
-                        ol.album__list.album__list--3
-                            li.album__song Radioactive
-                            li.album__song Tiptoe
-                            li.album__song It's Time
-                            li.album__song Demons
-                            li.album__song On Top Of The World
-                            li.album__song Amsterdam
-                            li.album__song Hear Me
-                            li.album__song Every Night
-                            li.album__song Bleeding Out
-                            li.album__song Underdog
-                            li.album__song Nothing Left To Say / Rocks
-                            li.album__song My Fault
-                            li.album__song Round And Round
-                            li.album__song The River
-                            li.album__song America
-                            li.album__song Selene
-
-                article(title="Night Visions" class="music__album album album--last" id="NightVisions")
-                    div.album__info
-                        h2.album__title Night Visions
-                        time(datetime="2012-09-04" class="album__date") September 4<sup>th</sup> 2012
-                    div.album__content
-                        img(src="../assets/images/night-visions.jpg" alt="Night Visions (Album Cover)" class="album__img")
-                        ol.album__list.album__list--4
-                            li.album__song Radioactive
-                            li.album__song Tiptoe
-                            li.album__song It's Time
-                            li.album__song Demons
-                            li.album__song On Top Of The World
-                            li.album__song Amsterdam
-                            li.album__song Hear Me
-                            li.album__song Every Night
-                            li.album__song Bleeding Out
-                            li.album__song Underdog
-                            li.album__song Nothing Left To Say / Rocks
-                            li.album__song Cha-Ching (Till We Grow Older)
+                +album("Night Visions", "nightvisions", "2012-09-04", "September 4<sup>th</sup> 2012", "4", albums['Night Visions'])
 
         +footer("Music")
         script(src="../assets/js/script.js")
