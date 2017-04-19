@@ -222,12 +222,13 @@ mixin news(date, datetime, title, desc, href)
             a(href=""+href title="More about \""+title+"\"" class="new__more") Read more<span class="new__more--hidden"> about "#{title}"</span>
             
 mixin album(title, id, datetime, date, numero, songs)
-    article(title=title class="music__album album" id=id)
+    article(title=title class="music__album album" id=id itemscope itemtype="http://schema.org/MusicAlbum")
+        span(class="hidden" itemprop="byArtist") Imagine Dragons
         div.album__info
-            h2.album__title!= title
-            time(datetime=datetime class="album__date")!= date
+            h2(class="album__title" itemprop="name")!= title
+            time(datetime=datetime class="album__date" itemprop="albumRelease")!= date
         div.album__content
-            img(src="../assets/images/" + id + ".jpg" alt=title + " (Album cover)" class="album__img")
+            img(src="../assets/images/" + id + ".jpg" alt=title + " (Album cover)" class="album__img" itemprop="image")
             ol(class="album__list album__list--"+numero)
                 each song in songs
-                    li.album__song!= song
+                    li(class="album__song" itemprop="track")!= song
