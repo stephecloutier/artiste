@@ -231,6 +231,7 @@ mixin news(date, datetime, title, desc, href)
 mixin album(title, id, datetime, date, numero, songs)
     article(title=title class="music__album album" id=id itemscope itemtype="http://schema.org/MusicAlbum")
         span(class="hidden" itemprop="byArtist") Imagine Dragons
+        span(class="hidden" itemprop="numTracks")!= songs.length
         div.album__info
             h2(class="album__title" itemprop="name")!= title
             time(datetime=datetime class="album__date" itemprop="albumRelease")!= date
@@ -238,4 +239,5 @@ mixin album(title, id, datetime, date, numero, songs)
             img(src="../assets/images/" + id + ".jpg" alt=title + " (Album cover)" class="album__img" itemprop="image")
             ol(class="album__list album__list--"+numero)
                 each song in songs
-                    li(class="album__song" itemprop="track")!= song
+                    li(class="album__song" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording")
+                        span(itemprop="name")!= song
