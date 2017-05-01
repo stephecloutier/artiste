@@ -197,20 +197,25 @@ mixin mediasFigures(src, alt, date, desc)
             time(datetime=""+date class="medias__date")= date
             p.medias__desc= desc
 
-mixin show(title, place, datetime, date, date_time, time, price, img)
+mixin show(title, place_name, place_address, datetime, date, date_time, time, price, img)
     article(title=""+title class="shows__show show" itemscope itemtype="http://schema.org/MusicEvent")
-        h2(class="show__title show--"+datetime itemprop="about")
+        h2(class="show__title show--"+datetime itemprop="name")
             span.show__title--text!= title
         span(class="hidden" itemprop="performer") Imagine Dragons
         div.show__wrapper
             div.show__infos
-                p(class="show__p.show__place" itemprop="location")!= place
+                p(class="show__p.show__place" itemscope itemtype="http://schema.org/Place" itemprop="location")
+                    strong(itemprop="name" class="show__place--main")!= place_name
+                    span(itemprop="address")!= place_address
                 div(class="show__datetime")
                     p.show__p
-                        time(datetime=""+date_time+datetime itemprop="startDate")
+                        time(datetime=""+datetime+"T"+date_time+"+02:00" itemprop="startDate")
                             span(class="show__date")!= date
                             span(class="show__time")!= time
-                p(class="show__p.show__price" itemprop="offers price")!= price
+                p(class="show__p.show__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer")
+                    span(itemprop="priceCurrency" content="USD") $
+                    span(itemprop="price")!= price
+                    span(itemprop="availability" class="hidden") In stock
             a(href="#buyTickets" class="show__button") Buy tickets
                             
 mixin news(date, datetime, title, desc, href)
