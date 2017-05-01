@@ -220,12 +220,14 @@ mixin show(title, place_name, place_address, datetime, date, date_time, time, pr
             a(href="#buyTickets" class="show__button") Buy tickets
                             
 mixin news(date, datetime, title, desc, href)
-    article(title=""+title class="news__new new")
+    article(title=""+title class="news__new new" itemscope itemtype="https://schema.org/Article")
+        span(class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Organization") 
+            span(itemprop="name") Imagine Dragons
         div(class="new__presentation new__presentation--"+datetime)
-            time(datetime=""+datetime class="new__date")!= date
+            time(datetime=""+datetime class="new__date" itemprop="datePublished")!= date
         div.new__content
-            h2.new__title #{title}
-            p.new__description!= desc
+            h2(class="new__title" itemprop="headline") #{title}
+            p(class="new__description" itemprop="articleBody")!= desc
             a(href=""+href title="More about \""+title+"\"" class="new__more") Read more<span class="new__more--hidden"> about "#{title}"</span>
             
 mixin album(title, id, datetime, date, numero, songs)
