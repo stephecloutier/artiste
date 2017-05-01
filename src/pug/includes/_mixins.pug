@@ -198,18 +198,19 @@ mixin mediasFigures(src, alt, date, desc)
             p.medias__desc= desc
 
 mixin show(title, place, datetime, date, date_time, time, price, img)
-    article(title=""+title class="shows__show show")
-        h2(class="show__title show--"+datetime)
+    article(title=""+title class="shows__show show" itemscope itemtype="http://schema.org/MusicEvent")
+        h2(class="show__title show--"+datetime itemprop="about")
             span.show__title--text!= title
+        span(class="hidden" itemprop="performer") Imagine Dragons
         div.show__wrapper
             div.show__infos
-                p.show__p.show__place!= place
-                div.show__datetime
+                p(class="show__p.show__place" itemprop="location")!= place
+                div(class="show__datetime")
                     p.show__p
-                        time(datetime=""+datetime class="show__date")!= date
-                    p.show__p
-                        time(datetime=""+date_time+"2:00" class="show__time")!= time
-                p.show__p.show__price!= price
+                        time(datetime=""+date_time+datetime itemprop="startDate")
+                            span(class="show__date")!= date
+                            span(class="show__time")!= time
+                p(class="show__p.show__price" itemprop="offers price")!= price
             a(href="#buyTickets" class="show__button") Buy tickets
                             
 mixin news(date, datetime, title, desc, href)
