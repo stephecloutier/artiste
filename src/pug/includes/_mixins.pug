@@ -197,11 +197,12 @@ mixin mediasFigures(src, alt, date, desc)
             time(datetime=""+date class="medias__date")= date
             p.medias__desc= desc
 
-mixin show(title, place_name, place_address, datetime, date, date_time, time, price, img)
-    article(title=""+title class="shows__show show" itemscope itemtype="http://schema.org/MusicEvent")
+mixin show(title, place_name, place_address, datetime, date, date_time, time, price)
+    article(title=""+title class="shows__show show" itemscope itemtype="http://schema.org/MusicEvent" id=title.replace(/\s+/g, ''))
         h2(class="show__title show--"+datetime itemprop="name")
             span.show__title--text!= title
         span(class="hidden" itemprop="performer") Imagine Dragons
+        a(href="#"+title.replace(/\s+/g, '') itemprop="url" class="hidden" aria-hidden="true")
         div.show__wrapper
             div.show__infos
                 p(class="show__p.show__place" itemscope itemtype="http://schema.org/Place" itemprop="location")
