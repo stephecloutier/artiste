@@ -28,12 +28,12 @@
     letter-spacing: 1.5px;
     font-size: 1em;
     line-height: 1.5;
-    .show__place {
-        .show__place--main {
-            text-transform: uppercase;
-            ///font-weight: 600;
-        }
-    }
+}
+
+.show__place--main {
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
 }
 
 .show__date, .show__time {
