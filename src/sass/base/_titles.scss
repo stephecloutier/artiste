@@ -17,6 +17,6 @@ h1 span {
     margin: 0 auto;
 }
 
-header h2, section[title="Footer"] h1, section[title="Footer"] h2 {
+header h2, footer h1, footer h2 {
     @include hidden;
 }
