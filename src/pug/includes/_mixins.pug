@@ -213,10 +213,6 @@ mixin show(title, place_name, place_address, datetime, date, date_time, time, pr
                         time(class="dtstart" title=datetime+"T"+date_time+"2:00" datetime=""+datetime+"T"+date_time+"+02:00" itemprop="startDate")
                             span(class="show__date")!= date
                             span(class="show__time")!= time
-                //- p(class="show__p show__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer")
-                //-     span(itemprop="priceCurrency" content="USD") $
-                //-     span(itemprop="price")!= price
-                //-     span(itemprop="availability" class="hidden") In stock
             a(href="#buyTickets" class="show__button") 
                 Buy tickets 
                 span(class="show__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer")
