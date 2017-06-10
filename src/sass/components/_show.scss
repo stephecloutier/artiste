@@ -6,8 +6,6 @@
 @include showsBgImg($showsDates);
 
 .show__title {
-    //background: $d-lPurple;
-    //background-image: url("../images/festivalpark.jpg");
     background-size: cover;
     background-position: center;
     min-height: 150px;
@@ -25,13 +23,14 @@
 }
 
 .show__infos  {
-    letter-spacing: 1.5px;
     font-size: 1em;
     line-height: 1.5;
+    font-weight: 300;
 }
 
 .show__place--main {
     text-transform: uppercase;
+    letter-spacing: 1.5px;
     font-weight: 600;
     display: block;
 }
@@ -53,14 +52,10 @@
     color: $dPurple;
     border: 2px solid $dPurple;
     transition: 0.25s ease-in-out;
-    //@include bigButton($dPurple, white);
-    //font-size: 1em;
     &:hover {
         text-align: center;
-        //padding-left: 1em;
         background-color: $lPurple;
         border-color: $lPurple;
         color: white;
-        //@include bigButtonHover($lPurple);
     }
 }
