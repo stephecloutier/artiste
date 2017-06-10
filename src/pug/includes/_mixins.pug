@@ -205,7 +205,7 @@ mixin show(title, place_name, place_address, datetime, date, date_time, time, pr
         a(href="#"+title.replace(/\s+/g, '') itemprop="url" class="hidden" aria-hidden="true")
         div.show__wrapper
             div.show__infos
-                p(class="show__p.show__place location" itemscope itemtype="http://schema.org/Place" itemprop="location")
+                p(class="show__p show__place location" itemscope itemtype="http://schema.org/Place" itemprop="location")
                     strong(itemprop="name" class="show__place--main")!= place_name
                     span(itemprop="address")!= place_address
                 div(class="show__datetime")
@@ -213,7 +213,7 @@ mixin show(title, place_name, place_address, datetime, date, date_time, time, pr
                         time(class="dtstart" title=datetime+"T"+date_time+"2:00" datetime=""+datetime+"T"+date_time+"+02:00" itemprop="startDate")
                             span(class="show__date")!= date
                             span(class="show__time")!= time
-                p(class="show__p.show__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer")
+                p(class="show__p show__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer")
                     span(itemprop="priceCurrency" content="USD") $
                     span(itemprop="price")!= price
                     span(itemprop="availability" class="hidden") In stock
