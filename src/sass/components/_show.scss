@@ -26,9 +26,6 @@
     font-size: 1em;
     line-height: 1.5;
     font-weight: 300;
-    .show__price {
-        color: $dPurple;
-    }
 }
 
 .show__place {
@@ -64,5 +61,8 @@
         background-color: $lPurple;
         border-color: $lPurple;
         color: white;
+    }
+    .show__price {
+        padding-left: 0.3em;
     }
 }
