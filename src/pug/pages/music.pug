@@ -7,17 +7,18 @@ html
     body
         +header("Music", "header")
             
-        main.music
-            h1.music__title 
-                span Music
+        main
+            div.music
+                h1.music__title 
+                    span Music
+                    
+                +album("Smoke + Mirrors (Deluxe)", "smoke+mirrors_deluxe", "2015-10-30", "October 30<sup>th</sup> 2015", "1", albums['Smoke + Mirrors (Deluxe)'])
                 
-            +album("Smoke + Mirrors (Deluxe)", "smoke+mirrors_deluxe", "2015-10-30", "October 30<sup>th</sup> 2015", "1", albums['Smoke + Mirrors (Deluxe)'])
-            
-            +album("Smoke + Mirrors", "smoke+mirrors", "2015-02-17", "February 17<sup>th</sup> 2015", "2", albums['Smoke + Mirrors'])
+                +album("Smoke + Mirrors", "smoke+mirrors", "2015-02-17", "February 17<sup>th</sup> 2015", "2", albums['Smoke + Mirrors'])
 
-            +album("Night Visions (Deluxe)", "nightvisions_deluxe", "2013-01-01", "January 1<sup>st</sup> 2013", "3", albums['Night Visions (Deluxe)'])
+                +album("Night Visions (Deluxe)", "nightvisions_deluxe", "2013-01-01", "January 1<sup>st</sup> 2013", "3", albums['Night Visions (Deluxe)'])
 
-            +album("Night Visions", "nightvisions", "2012-09-04", "September 4<sup>th</sup> 2012", "4", albums['Night Visions'])
+                +album("Night Visions", "nightvisions", "2012-09-04", "September 4<sup>th</sup> 2012", "4", albums['Night Visions'])
 
         +footer("Music")
         script(src="../assets/js/script.js")
