@@ -1,6 +1,13 @@
 .biography {
-    color: white;
+    color: $grey;
+    font-weight: 300;
     background: $d-lPurple;
+}
+
+.biography__wrapper {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 2.8em;
+    box-shadow: $boxShadow;
 }
 
 .biography__title {
@@ -20,9 +27,9 @@
 
 .biography__link {
     font-style: normal;
-    text-decoration: underline;
+    font-weight: 500;
     transition: 0.25s ease-in-out;
     &:hover {
-        color: $turquoise;
+        color: $dPurple;
     }
 }
