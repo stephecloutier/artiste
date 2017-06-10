@@ -28,13 +28,13 @@ mixin header(page, location)
                     
 
 mixin footer(page)
-    footer(title="Footer" class="footer")
+    footer(class="footer")
         h1 Footer
         div.footer__wrapper
             +socialNav("footer")
             
             div.footer__infos
-                div(title="Buy our music" class="footer__buy-nav buy-nav")
+                div(class="footer__buy-nav buy-nav")
                     span.buy-nav__title Buy our music on
                     ul.buy-nav__list
                         li.buy-nav__li.buy-nav__li--amazon
@@ -49,7 +49,7 @@ mixin footer(page)
                             | Contact webmaster
                         
 mixin socialNav(location)
-    nav(title="Social Medias" class=location+"-social__nav")
+    nav(class=location+"-social__nav")
         h2 Social medias navigation
         ul(class=location+"-social__list")
             li(class=location+"-social__li")
@@ -198,7 +198,7 @@ mixin mediasFigures(src, alt, date, desc)
             p.medias__desc= desc
 
 mixin show(title, place_name, place_address, datetime, date, date_time, time, price)
-    article(title=""+title class="shows__show show vevent" itemscope itemtype="http://schema.org/MusicEvent" id=title.replace(/\s+/g, ''))
+    article(class="shows__show show vevent" itemscope itemtype="http://schema.org/MusicEvent" id=title.replace(/\s+/g, ''))
         h2(class="summary show__title show--"+datetime itemprop="name")
             span.show__title--text!= title
         span(class="hidden" itemprop="performer") Imagine Dragons
@@ -220,7 +220,7 @@ mixin show(title, place_name, place_address, datetime, date, date_time, time, pr
             a(href="#buyTickets" class="show__button") Buy tickets
                             
 mixin news(date, datetime, title, desc, href)
-    article(title=""+title class="news__new new" itemscope itemtype="https://schema.org/Article")
+    article(class="news__new new" itemscope itemtype="https://schema.org/Article")
         span(class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Organization") 
             span(itemprop="name") Imagine Dragons
         div(class="new__presentation new__presentation--"+datetime)
@@ -231,7 +231,7 @@ mixin news(date, datetime, title, desc, href)
             a(href=""+href title="More about \""+title+"\"" class="new__more") Read more<span class="new__more--hidden"> about "#{title}"</span>
             
 mixin album(title, id, datetime, date, numero, songs)
-    article(title=title class="music__album album" id=id itemscope itemtype="http://schema.org/MusicAlbum")
+    article(class="music__album album" id=id itemscope itemtype="http://schema.org/MusicAlbum")
         span(class="hidden" itemprop="byArtist") Imagine Dragons
         span(class="hidden" itemprop="numTracks")!= songs.length
         div.album__info
