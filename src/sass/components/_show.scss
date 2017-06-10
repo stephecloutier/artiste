@@ -31,12 +31,16 @@
     }
 }
 
-.show__place--main {
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    display: block;
+.show__place {
+    font-weight: 400;
+    .show__place--main {
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        display: block;
+    }
 }
+
 
 .show__date, .show__time {
     display: block;
