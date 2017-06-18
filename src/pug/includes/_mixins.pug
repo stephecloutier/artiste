@@ -182,8 +182,7 @@ mixin instagram-icon(className)
 mixin navIconSVG
     svg(version="1.1" id="navIconSVG" class="navIconSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 142 142" style="enable-background:new 0 0 142 142;" xml:space="preserve")
         rect(x="21" y="21" width="100" height="100" class="svg__rect")
-        g.svg__group
-            
+        g.svg__group        
             rect(x="44.6" y="50.3" class="svg__line svg__line--1" width="52.8" height="5")
             rect(x="37.8" y="67.5" class="svg__line svg__line--2" width="66.4" height="5")
             rect(x="37.8" y="67.5" class="svg__line svg__line--3" width="66.4" height="5")
@@ -214,7 +213,7 @@ mixin show(title, place_name, place_address, datetime, date, date_time, time, pr
                             span(class="show__date")!= date
                             span(class="show__time")!= time
             a(href="#buyTickets" class="show__button") 
-                Buy tickets 
+                span Buy tickets 
                 span(class="show__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer")
                     span(itemprop="priceCurrency" content="USD") ($
                     span(itemprop="price") #{price})
